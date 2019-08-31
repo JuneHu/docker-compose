@@ -23,7 +23,6 @@ services:
     volumes:
       - ${DRUPAL_MODULE_PATH}:/var/www/html/modules
       - ${DRUPAL_THEME_PATH}:/var/www/html/themes
-      - ${DRUPAL_SITE_PATH}:/var/www/html/sites
     restart: always
     networks:
       - drupal8

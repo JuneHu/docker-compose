@@ -1,0 +1,24 @@
+cloud_system.sys_config:
+  title: 云平台设置
+  parent: system.admin_config
+  description: 'settings.'
+  route_name: cloud_system.sys_config
+  weight: -100
+cloud_system.rate_limiter:
+  title: Rate Limiter
+  description: 'Rate Limiter Configuration.'
+  route_name: cloud_system.rate_limiter
+  parent: cloud_system.sys_config
+  weight: -10
+cloud_system.api_url:
+  title: API Configuration
+  description: 'API Configuration.'
+  route_name: cloud_system.api.config
+  parent: cloud_system.sys_config
+  weight: -11
+cloud_system.email:
+  title: Email Configuration
+  description: 'Email Configuration.'
+  route_name: cloud_system.email.config
+  parent: cloud_system.sys_config
+  weight: -9

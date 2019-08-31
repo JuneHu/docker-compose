@@ -1,0 +1,206 @@
+{#
+/**
+ * @file
+ * The default template file for e-mails.
+ *
+ * Available variables:
+ * - subject: The subject.
+ * - body: The message content.
+ * - message: The $message array created and used in the mail building
+ *   procedure. Its content varies between cases, but typically contains at
+ *   least the following elements:
+ *   - id: The message identifier.
+ *   - module: The module that handles the building of the message.
+ *   - key: The key of the message.
+ *   - to: The recipient email address.
+ *   - from: The email address of the sender.
+ *   - langcode: The langcode to use to compose the e-mail.
+ *   - params: The message parameters.
+ *
+ * This template may be overriden by module and/or mail key, using any of the
+ * following template names:
+ * - cloud_mail.html.twig: global, used by default.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_cloud_mail()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>mail</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
+<body style="background-color: #ededed;">
+<style type="text/css">
+    #cloudmail #v-content h1,#cloudmail #v-content h2,#cloudmail #v-content h3,#cloudmail #v-content h4,#cloudmail #v-content h5{
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    #cloudmail #v-links img{
+        display: none;
+    }
+    #cloudmail #v-links li:hover img{
+        display: block;
+    }
+    #cloudmail #v-links li .fa{
+        background-color: #999;
+    }
+    #cloudmail #v-links li:hover .fa.fa-weixin{
+        background-color: #5bb85d;
+    }
+    #cloudmail #v-links li:hover .fa.fa-weibo{
+        background-color: #d9544f;
+    }
+    #cloudmail #v-links li:hover .fa.fa-tencent-weibo{
+        background-color: #5bc0de;
+    }
+</style>
+<table id="cloudmail" cellpadding="0" cellspacing="0" border="0"  style="width: 750px; margin: 15px auto;">
+    <tr>
+        <td style="padding-bottom: 15px;">
+            <img src="{{ message.logo }}">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div style="webkit-box-shadow: 0 3px 9px rgba(0,0,0,.2); box-shadow: 0 3px 9px rgba(0,0,0,.2); border-radius: 0px; overflow: hidden; background: #FFF;">
+                <table cellpadding="0" cellspacing="0" border="0"  style="width:750px; font-size: 14px; color: #333; line-height: 1.8;">
+                    {% if message.custom_header %}
+                        {{ message.custom_header }}
+                    {% endif %}
+                    {% if message.needContactInfo %}
+                        <tr>
+                            <td>
+                                <a href="https://verycloud.cn/" target="_blank">
+                                    <img style="display: block; max-width: 100%; margin: 0 auto;" src="https://cloudmailimage.oss-cn-hangzhou.aliyuncs.com/ad2.png"></a>
+                            </td>
+                        </tr>
+                    {% endif %}
+                    <tr>
+                        <td id="v-content" style="line-height: 1.8; font-size: 14px;">
+                            <div style="width:690px; padding:30px;">
+                            <!--正文开始-->
+                            <h1>
+                                {{ message.userName }}
+                                ：
+                            </h1>
+                            <p>
+                                {{ body | raw}}
+                            </p>
+                            <div style="float: right;">
+                                感谢并期待您对我们的产品提出宝贵建议！
+                                <br>{{ message.platForm }}运营团队</div>
+                            <div style="clear: both;"></div>
+                            <!--//正文结束-->
+                            </div>
+                        </td>
+                    </tr>
+                    {% if message.needContactInfo %}
+                        {% if message.custom_footer %}
+                            {{ message.custom_footer }}
+                        {% else %}
+                            <tr>
+                                <td style="padding: 30px; background: #f4f4f4;">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; text-align: center;">
+                                        <tr>
+                                            <td width="15%">
+                                                <a href="https://www.verycloud.cn/cloud/hostinfo" target="_blank" style="text-decoration: none;">
+                                                    <div>
+                                                        <img style="width: 110px;  display: block; margin: 0 auto;" src="https://cloudmailimage.oss-cn-hangzhou.aliyuncs.com/micon1.png">
+                                                        <h2 style="margin: 5px 0; font-size: 18px; color: #333;">云主机</h2>
+
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td width="15%">
+                                                <a href="https://www.verycloud.cn/cloud/cdninfo" target="_blank" style="text-decoration: none;">
+                                                    <div style="">
+
+                                                        <img style="width: 110px; display: block; margin: 0 auto;" src="https://cloudmailimage.oss-cn-hangzhou.aliyuncs.com/micon2.png">
+                                                        <h2 style="margin: 5px 0; font-size: 18px; color: #333;">云分发</h2>
+
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td width="15%">
+                                                <a href="https://www.verycloud.cn/cloud/dnsinfo" target="_blank" style="text-decoration: none;">
+                                                    <div style="">
+
+                                                        <img style="width: 110px;  display: block; margin: 0 auto;" src="https://cloudmailimage.oss-cn-hangzhou.aliyuncs.com/micon3.png">
+                                                        <h2 style="margin: 5px 0; font-size: 18px; color: #333;">云DNS</h2>
+
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td width="15%">
+                                                <a href="https://www.verycloud.cn/cloud/desktop" target="_blank" style="text-decoration: none;">
+                                                    <div style="border-right: 1px solid #e2e2e2;">
+
+                                                        <img style="width: 110px; display: block; margin: 0 auto;" src="https://cloudmailimage.oss-cn-hangzhou.aliyuncs.com/micon4.png">
+                                                        <h2 style="margin: 5px 0; font-size: 18px; color: #333;">云桌面</h2>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td width="40%">
+                                                <div style="float: left; padding-left: 20px;">
+                                                    <img src="https://cloudmailimage.oss-cn-hangzhou.aliyuncs.com/qrcode-mobile.png" style="width: 100px; height: 100px; padding: 5px; border: 1px solid #e2e2e2; background: #FFF;"></div>
+                                                <div id="mobile-btns" style="margin-left: 128px; text-align:left;padding-left: 15px;">
+                                                    <p style="font-size:14px; fpnt-weight:bold; line-height:1.8em;">官方APP</p>
+                                                    <p style="font-size:12px; color:#a6a6a6;">扫码下载<br>便捷管理云产品</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <table cellpadding="0" cellspacing="0" border="0" style="width:750px; text-align: left;">
+                                    <tr>
+                                        <td width="35%" style="background:#ededed; text-align: left;">
+                                            <ul id="v-links" style="margin-top: 0; margin-bottom: 10px; list-style: none; padding-left: 20px; padding-top:20px;">
+
+                                                <li style="list-style: none; display: inline-block; padding: 0 5px;">
+                                                    <a class="fa fa-weibo" href="http://weibo.com/verycloud" target="_blank" style="width: 45px; height: 45px; border-radius: 100%; display: inline-block; cursor: pointer; background-image: url('https://cloudmailimage.oss-cn-hangzhou.aliyuncs.com/icons.png'); background-position: 0 0;"></a>
+                                                </li>
+                                                <li style="list-style: none; display: inline-block; position: relative; padding: 0 5px; cursor: pointer;">
+                                                    <img src="https://cloudmailimage.oss-cn-hangzhou.aliyuncs.com/qrcode-weixin.png" style="width: 100px; height: 100px; padding: 5px; border: 1px solid #e2e2e2; background: #FFF; webkit-box-shadow: 0 3px 9px rgba(0,0,0,.2); box-shadow: 0 3px 9px rgba(0,0,0,.2); position: absolute; top: -120px; left: 50%; margin-left: -56px;"> <i class="fa fa-weixin" style="width: 45px; height: 45px; border-radius: 100%; display: inline-block; background-image: url('https://cloudmailimage.oss-cn-hangzhou.aliyuncs.com/icons.png'); background-position: -90px 0;"></i>
+                                                </li>
+                                            </ul>
+                                            <div style="font-size: 12px; color: #999; padding-left: 20px;">感谢并期待您对我们的产品<br/>提出宝贵的建议！</div>
+                                        </td>
+                                        <td width="65%" style="background:#ededed;">
+                                            <div style="line-height: 1.8; padding-top: 15px; font-size: 12px; color: #999; text-align: right; padding-right: 10px;">
+                                                {{ message.platForm }} @ {{ "now"|date("Y") }}
+                                                <br>
+                                                说明：此邮件是{{ message.platForm }}系统发出，请不要回复该邮件。
+                                                <br>
+                                                {% if message.platForm == 'verycloud' %}
+                                                    如您有任何疑问或需求
+                                                    <br>
+                                                    请拨打电话：400-0005-1023
+                                                    <br>
+                                                    登录VeryCloud支持中心获得帮助：
+                                                    <a href="https://www.verycloud.cn/cloud/help" target="_blank" style="color: #4f87fb; text-decoration: underline;">支持中心</a>
+                                                {% endif %}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </tr>
+                        {% endif %}
+                    {% endif %}
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

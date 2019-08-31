@@ -1,0 +1,59 @@
+cloud_system.rest.list:
+  path: 'admin/rest/list'
+  defaults:
+    _controller: '\Drupal\cloud_system\Controller\CloudSystemEnableRestController::listResources'
+    _title: 'Enable rest api resources.'
+  requirements:
+    _permission: 'administer rest resources'
+
+cloud_system.rest.enable:
+  path: 'admin/rest/enable/{resource_type}'
+  defaults:
+    _controller: '\Drupal\cloud_system\Controller\CloudSystemEnableRestController::enable'
+    _title: 'Enable rest api resources.'
+  requirements:
+    _permission: 'administer rest resources'
+
+cloud_system.rest.disable:
+  path: '/admin/config/services/rest/resource/{resource_id}/disable'
+  defaults:
+    _controller: '\Drupal\cloud_system\Controller\CloudSystemEnableRestController::disable'
+  requirements:
+    _permission: 'administer rest resources'
+
+cloud_system.rest.edit:
+  path: '/admin/config/services/rest/resource/{resource_id}/edit'
+  defaults:
+    _form: '\Drupal\cloud_system\Form\RestUIForm'
+  requirements:
+    _permission: 'administer rest resources'
+
+cloud_system.sys_config:
+  path: '/admin/config/sys_config'
+  defaults:
+    _controller: '\Drupal\cloud_system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: '云平台设置'
+  requirements:
+    _permission: 'access administration pages'
+
+cloud_system.rate_limiter:
+  path: '/admin/config/sys_config/rate_limiter'
+  defaults:
+    _form: '\Drupal\cloud_system\Form\RateLimiterConfigForm'
+    _title: 'Rate Limiter Configuration'
+  requirements:
+    _permission: 'access administration pages'
+
+cloud_system.api.config:
+  path: '/admin/config/sys_config/api/config'
+  defaults:
+    _form: '\Drupal\cloud_system\Form\APIConfigForm'
+  requirements:
+    _permission: 'administer rest resources'
+
+cloud_system.email.config:
+  path: '/admin/config/sys_config/email/config'
+  defaults:
+    _form: '\Drupal\cloud_system\Form\EmailConfigForm'
+  requirements:
+    _permission: 'administer rest resources'

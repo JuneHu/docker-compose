@@ -1,0 +1,130 @@
+<?php
+
+namespace Drupal\cloud_system;
+
+use Symfony\Component\HttpFoundation\RequestStack;
+
+/**
+ * Provides api analyze builder.
+ */
+class CloudSystemApiAnalyze {
+  /**
+   * Indicates that the throttle rate limit.
+   */
+  const THROTTLE_LIMIT_COUNT = 10000000;
+
+  /**
+   * Indicates that the throttle time.
+   */
+  const THROTTLE_TIME = 600;
+
+  /**
+   * The request stack.
+   *
+   * @var \Symfony\Component\HttpFoundation\RequestStack
+   */
+  protected $request;
+
+  /**
+   * Holds the redis client.
+   */
+  private $redis;
+
+  /**
+   * Construct the request.
+   *
+   * @param \Symfony\Component\HttpFoundation\RequestStack $request
+   *   The request stack used to retrieve the current request.
+   */
+  public function __construct(RequestStack $request) {
+    $this->request = $request->getCurrentRequest();
+
+    // General Redis settings
+    $redis = [
+      'host' => '127.0.0.1',
+      'port' => 6379,
+      'database' => 1,
+    ];
+
+    // Use Redis PECL library.
+    try {
+      $this->redis = new \Redis();
+      $this->redis->connect($redis['host'], $redis['port']);
+      //$this->redis->setOption(\Redis::OPT_SERIALIZER, \Redis::SERIALIZER_PHP);
+
+      if (isset($redis['auth'])) {
+        $this->redis->auth($redis['auth']);
+      }
+      if (isset($redis['database'])) {
+        $this->redis->select($redis['database']);
+      }
+    } catch (\Exception $e) {
+      throw $e;
+    }
+  }
+
+  /**
+   * The rate limiter pattern to count api used.
+   *
+   * @param string $apiKey
+   *   The key to be limit.
+   *
+   * @return bool
+   *   True if can run, otherwise FALSE.
+   */
+  public function rateLimit($apiKey = null) {
+    $clientIp = $this->request->getClientIp();
+    $request_method = $this->request->server->get('REQUEST_METHOD');
+    $request_url = $this->request->server->get('REQUEST_URI');
+    $http_user_agent = $this->request->server->get('HTTP_USER_AGENT');
+    $request_scheme = $this->request->server->get('REQUEST_SCHEME');
+
+    $cid = md5($clientIp . $request_method . $request_url . $http_user_agent . $request_scheme);
+
+    // Redis key.
+    $apiRunCountKey = $cid . '-' . $apiKey;
+    $count = $this->redis->get($apiRunCountKey);
+    // If the request on first time, set.
+    if ($count === false) {
+      $this->redis->setex(
+        $apiRunCountKey,
+        self::THROTTLE_TIME,
+        self::THROTTLE_LIMIT_COUNT
+      );
+    }
+
+    if ($count < 0) {
+      return false;
+    }
+
+    // Get current api count.
+    $currentApiCount = $this->redis->decr($apiRunCountKey);
+
+    if ($currentApiCount < 0) {
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * Collect api status.
+   *
+   * @param array $apiAction
+   *   The api actions to collected.
+   */
+  public function collectApiStatus($apiAction) {
+    $code = $apiAction['c'];
+    $elapsed = $apiAction['e'];
+    // Insert all the specified values at the head of the list stored at key.
+    $this->redis->lPush('apiStatus', json_encode($apiAction));
+
+    // Collect code status.
+    $this->redis->zincrby('apiStatus_' . $code, 1, $code);
+
+    // Collect timeout 2s.
+    if ($elapsed > 2000) {
+      $this->redis->zincrby('apiStatus_' . $code, 1, 'timeout');
+    }
+  }
+
+}

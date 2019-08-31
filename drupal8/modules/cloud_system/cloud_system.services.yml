@@ -1,0 +1,90 @@
+services:
+  cloud_system.base:
+    class: Drupal\cloud_system\CloudSystemBase
+    arguments: ['@request_stack', '@http_client', '@database']
+
+  cloud_system.database:
+      class: Drupal\cloud_system\CloudSystemDatabase
+      arguments: ['@database']
+
+  authentication.cloud_system:
+    class: Drupal\cloud_system\Authentication\Provider\CloudAuthenticationProvider
+    arguments: ['@config.factory', '@entity.manager', '@cloud_system.base']
+    tags:
+      - { name: authentication_provider, provider_id: cloud_authentication_provider, priority: 100 }
+
+  cloud_system.normalizer.cloud:
+    class: Drupal\cloud_system\Normalizer\CloudNormalizer
+    tags:
+      - { name: normalizer }
+
+  cloud_system.subscriber.request:
+    class: Drupal\cloud_system\EventSubscriber\RequestSubscriber
+    arguments: ['@current_user']
+    tags:
+      - { name: event_subscriber }
+
+  cloud_system.exception:
+      class: Drupal\cloud_system\EventSubscriber\HttpExceptionSubscriber
+      arguments: ['@config.factory', '@http_kernel', '@cloud_system.base']
+      tags:
+        - { name: event_subscriber }
+
+  cloud_system.rest.manager:
+    class: Drupal\cloud_system\RestUIManager
+    arguments: ['@entity.manager']
+
+  cloud_system.rest.authentication_collector:
+    class: Drupal\cloud_system\RestUIAuthenticationCollector
+    tags:
+    - { name: service_collector, tag: authentication_provider, call: addProvider }
+
+  cloud_system.manager:
+    class: Drupal\cloud_system\CloudSystemManager
+    tags:
+      - { name: backend_overridable }
+
+  cloud_system.httpkernel.middleware:
+    class: Drupal\cloud_system\CloudSystemHttpKernelMiddleware
+    arguments: ['@cloud_system.manager', '@cloud_system.base']
+    tags:
+      - { name: http_middleware, priority: -100 }
+
+  #cloud_system.api.analyze:
+  #  class: Drupal\cloud_system\CloudSystemApiAnalyze
+  #  arguments: ['@request_stack']
+
+  cloud_system.redis:
+    class: Drupal\cloud_system\CloudSystemRedisManager
+    arguments: ['@settings']
+
+  sms.sender:
+    class: Drupal\cloud_system\YunpianSmsDelivery
+    arguments: ['@cloud_system.base']
+
+  cloud_system.multi.request:
+    class : Drupal\cloud_system\MultiHttpRequest
+    arguments: ['@cloud_system.base']
+
+  rate_limiter.manager:
+    class: Drupal\cloud_system\RateLimitManager
+    tags:
+      - { name: backend_overridable }
+
+  rate_limiter.middleware:
+    class: Drupal\cloud_system\RateLimitMiddleware
+    arguments: ['@rate_limiter.manager']
+    tags:
+      - { name: http_middleware, priority: 400 }
+
+  cache.ratelimit:
+      class: Drupal\Core\Cache\CacheBackendInterface
+      tags:
+        - { name: cache.bin }
+      factory: cache_factory:get
+      arguments: [ratelimit]
+
+  php_excel.manager:
+    class: Drupal\cloud_system\CloudSystemPHPExcelManager
+    tags:
+      - { name: backend_overridable }

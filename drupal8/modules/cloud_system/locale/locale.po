@@ -1,0 +1,3928 @@
+# 注意：
+# msgid为英文
+# msgstr为中文
+
+# 系统级错误代码
+
+msgid "Access denied."
+msgstr "无权限访问对应的资源."
+
+msgid "Url %s Access denied."
+msgstr "无权限访问URL %s."
+
+msgid "No permission."
+msgstr "无权限操作。"
+
+msgid "The JSON you provided was well-formed and valid, but not appropriate for this operation."
+msgstr "请求中的JSON格式正确，但语义上不符合要求。如缺少某个必需项，或值类型不匹配等。"
+
+msgid "There was an error in the body of your HTTP request."
+msgstr "HTTP body格式错误。例如不符合指定的Encoding等。"
+
+msgid "The JSON you provided was not well-formed."
+msgstr "JSON格式不合法。"
+
+msgid "A subscription for the service is required."
+msgstr "没有开通对应的服务。"
+
+msgid "There is no data found."
+msgstr "暂无数据。"
+
+msgid "No Information modified."
+msgstr "没有任何改动。"
+
+msgid "Nothing to update."
+msgstr "没有任何改动。"
+
+msgid "The system is being upgraded, please try again later!"
+msgstr "系统正在升级中，请您稍后再试。"
+
+msgid "Batch delete functions failed."
+msgstr "批量删除失败。"
+
+msgid "Batch operations failed."
+msgstr "批量操作失败。"
+
+msgid "The channel service is not exist."
+msgstr "该渠道商不存在。"
+
+msgid "The channel %s is not exist."
+msgstr "渠道商 %s不存在。"
+
+msgid "The channel is not exist."
+msgstr "渠道商不存在。"
+
+msgid "Invalid channel state."
+msgstr "错误的渠道商状态。"
+
+msgid "Channel %s has been enabled."
+msgstr "渠道商 %s已启用。"
+
+msgid "Channel %s has been disabled."
+msgstr "渠道商 %s已禁用。"
+
+msgid "Please enable channel %s first."
+msgstr "请先启用渠道商 %s。"
+
+msgid "The channel service %s has been existed."
+msgstr "该渠道商已存在服务%s。"
+
+msgid "The default service %s has been existed."
+msgstr "该渠道商已存在默认服务%s。"
+
+msgid "Please delete the channel service of a same channel."
+msgstr "必须删除同一个渠道商下的服务。"
+
+msgid "No operations."
+msgstr "无操作。"
+
+msgid "Internal Server Error."
+msgstr "服务器错误，请联系系统管理员。"
+
+msgid "This function has not yet been implemented."
+msgstr "该接口还未实现。"
+
+msgid "Confirmed to recover deleted data?"
+msgstr "确认恢复数据?"
+
+msgid "Record does not exist."
+msgstr "记录不存在。"
+
+msgid "The post data is empty."
+msgstr "POST数据为空。"
+
+msgid "There has no response data available for all channels."
+msgstr "没有一个渠道下发成功。"
+
+msgid "The request is malformed or incorrect."
+msgstr "请求失败，请联系管理员。"
+
+# 参数
+msgid "Missing parameters %s."
+msgstr "缺少参数 %s。"
+
+msgid "Invalid parameter %s."
+msgstr "参数%s输入错误。"
+
+msgid "The %s parameters are passed at least in request."
+msgstr "%s参数请求时至少传入一个."
+
+msgid "There is unsupported parameters %s."
+msgstr "不支持参数%s，请您检查该参数是否正确。"
+
+msgid "The specified value of parameter %s value is not malformed."
+msgstr "参数%s传入值错误。"
+
+msgid "The specified value of parameter %s value can not be empty."
+msgstr "参数%s传入值不能为空。"
+
+msgid "The specified value of parameter %s is not supported, optional value:[%s]."
+msgstr "输入的参数%s值不合法，超出可选范围，取值：[%s]。"
+
+msgid "The specified value of parameter %s is malformed."
+msgstr "输入的参数%s值不合法。"
+
+msgid "The specified parameter IP format is error."
+msgstr "IP格式错误。"
+
+msgid "The input parameter %s that is mandatory for processing this request is not supplied."
+msgstr "参数 %s 为必填项。"
+
+msgid "You must set at least one param."
+msgstr "您必须至少设置一个参数。"
+
+msgid "%s is not a valid ip address."
+msgstr "%s不是一个合法的IP地址。"
+
+msgid "The lua script is not exist."
+msgstr "lua脚本不存在。"
+
+msgid "No permission to bind the lua script."
+msgstr "无权限绑定这个lua脚本。"
+
+msgid "The url rewrite script is not exist."
+msgstr "rewrite脚本不存在。"
+
+msgid "No permission to bind the rewrite script."
+msgstr "无权限绑定这个rewrite脚本。"
+
+msgid "The specified %s does not exist."
+msgstr "请您检查参数 %s是否正确。"
+
+msgid "The specified %s has been existed."
+msgstr "指定的%s已存在。"
+
+msgid "The specified parameter %s status is not available."
+msgstr "参数%s状态不可用。"
+
+msgid "The difference between the request time and the current time is too large."
+msgstr "X-Request-Date不能小于当前时间。"
+
+#sys
+msgid "The name must begin with CLOUD_"
+msgstr "名称必须以cloud_打头。"
+
+msgid "The name is not exist."
+msgstr "参数名称不存在。"
+
+msgid "The dic is not exist."
+msgstr "字典不存在。"
+
+msgid "The dic has been deleted."
+msgstr "字典已经删除。"
+
+msgid "The dic id can not equal to parent_id."
+msgstr "字典ID不能等于父级ID。"
+
+msgid "Duplicate key parent_id、code."
+msgstr "重复的parent_id、code。"
+
+msgid "The dic contains sub-child."
+msgstr "请先删除该字典的子项。"
+
+msgid "Please add a record with code %s in the dictionary now."
+msgstr "请先在系统字典中添加code为%s的记录。"
+
+msgid "%s is not found."
+msgstr "%s不存在。"
+
+# 用户
+msgid "Username length is limited between 6 and 64 characters."
+msgstr "用户名长度限制6 ~ 64个字符之间。"
+
+msgid "QQ is over max length 16."
+msgstr "QQ不能超过16个字符。"
+
+msgid "Exceeded the ip register limit."
+msgstr "超出IP注册限制。"
+
+msgid "IP %s Exceeded the ip register limit."
+msgstr "IP %s 超出IP注册限制。"
+
+msgid "You do not have access to this operation."
+msgstr "没有权限操作。"
+
+msgid "User %s not found."
+msgstr "用户 %s 不存在。"
+
+msgid "User is not found."
+msgstr "用户不存在。"
+
+msgid "User %s is not agent."
+msgstr "用户 %s 不是代理商。"
+
+msgid "Parent user is not found."
+msgstr "主账号未找到。"
+
+msgid "The user accounts are created, but these users don't have any roles."
+msgstr "该用户帐户已经创建，但是这些用户还没有任何角色。"
+
+msgid "This account is expired."
+msgstr "此账户已过期。"
+
+msgid "The authentication token has beed expired."
+msgstr "验证失败，Authorization头域已过期。"
+
+msgid "Your account is suspended and is not permitted to access this feature."
+msgstr "此账户已被禁用。"
+
+msgid "Missing header Authorization."
+msgstr "缺少header头域Authorization。"
+
+msgid "Invalid authentication token."
+msgstr "验证失败，可能是token已过期或Authorization头域格式错误。"
+
+msgid "Unauthorized request."
+msgstr "验证失败，可能是token已过期或Authorization头域格式错误。"
+
+msgid "Could not authenticate you."
+msgstr "验证失败，可能是token已过期或Authorization头域格式错误。"
+
+msgid "The token has been expired or revoked."
+msgstr "验证失败，可能是token已过期或Authorization头域格式错误。"
+
+msgid "The authentication token has been expired."
+msgstr "验证失败，Authorization头域已过期。"
+
+msgid "Your account is not allowed to invoke this API."
+msgstr "您的账号无权使用该API。"
+
+msgid "Your account does not have enough balance."
+msgstr "账户余额不足，请先充值再操作。"
+
+msgid "You need to do real name authentication when you use chinese mainland resources."
+msgstr "根据中华人民共和国法律规定，在中国境内购买使用信息服务的用户需要进行实名登记。"
+
+msgid "This phone number has been blocked by account block list."
+msgstr "该手机号码在账户黑名单中，已被屏蔽。"
+
+msgid "This phone number request frequency limit."
+msgstr "该手机号码请求超限。"
+
+msgid "Pay config %s | %s has been existed."
+msgstr "用户 %s 的 %s 支付配置参数记录已存在。"
+
+msgid "Pay config %s not found."
+msgstr "支付配置参数 %s 不存在。"
+
+msgid "Recharge record is not found."
+msgstr "充值记录不存在。"
+
+msgid "Invalid alipay param."
+msgstr "支付宝配置参数错误。"
+
+msgid "Invalid recharge amount %s."
+msgstr "无效的充值金额 %s。"
+
+msgid "Recharge %s has been payed yet."
+msgstr "充值订单%s已经支付成功，不要重复提交。"
+
+msgid "Invalid pay bank %s."
+msgstr "无效的支付银行 %s。"
+
+msgid "Invalid recharge state."
+msgstr "无效的充值状态。"
+
+msgid "Invalid client ip address %s."
+msgstr "无效的客户端IP %s。"
+
+msgid "The recharge %s can not be deleted."
+msgstr "已经支付成功的充值记录 %s 不允许被删除。"
+
+msgid "Exceed the maximum limit of send alarm."
+msgstr "发送的次数超过最多5条的限制。"
+
+msgid "The balance is not enough for freezing."
+msgstr "余额不足，不足以冻结。"
+
+msgid "The freeze record %s not found."
+msgstr "资金冻结记录 %s 不存在。"
+
+msgid "The freeze is not enough for unfreezing."
+msgstr "冻结资金不足，不足以解冻。"
+
+msgid "Exceed the maximum limit of withdrawals."
+msgstr "提现次数已超出限制。"
+
+msgid "Exceed the maximum limit of withdraw amount."
+msgstr "提现金额超出限制。"
+
+msgid "The withdraw record is not found."
+msgstr "提现记录不存在。"
+
+msgid "The amount you wish to apply is more than your current balance, this operation will not be performed."
+msgstr "您要申请提现的金额超过了您现有的余额。"
+
+msgid "The withdraw fee exceeds the withdraw amount."
+msgstr "提现手续费不能超过提现金额。"
+
+msgid "Coupon is not found."
+msgstr "代金券不存在。"
+
+msgid "The coupon record %s not found."
+msgstr "代金券记录 %s 不存在。"
+
+msgid "Unavailable coupon."
+msgstr "无可用代金券。"
+
+msgid "You do not have permission to operate the coupon."
+msgstr "您没有权限操作该代金券。"
+
+msgid "The coupon are already used."
+msgstr "该代金券已被使用。"
+
+msgid "Please activate the coupon first."
+msgstr "请先激活代金券。"
+
+msgid "Only agent account can transfer coupon."
+msgstr "只有代理商帐户才能转让代金券。"
+
+msgid "Expire time of the coupon cannot be less than current time."
+msgstr "代金券的过期时间不能小于当前时间。"
+
+msgid "Coupon %s has been transferred."
+msgstr "代金券 %s已经转让。"
+
+msgid "Only agent sub-account can activate coupon."
+msgstr "只有代理商的子账户才能激活代金券。"
+
+msgid "Coupon %s has been activated."
+msgstr "代金券 %s已经激活。"
+
+msgid "Coupon %s has become invalid."
+msgstr "代金券 %s已作废。"
+
+msgid "Coupon %s has been expired."
+msgstr "代金券 %s已过期。"
+
+msgid "You can only add up to 5 addresses."
+msgstr "您最多可以添加5个发票地址。"
+
+msgid "Only inactive and activated vouchers can be voided."
+msgstr "只有未激活和已激活的代金券可以作废。"
+
+msgid "The invoice address is not found."
+msgstr "发票地址记录不存在。"
+
+msgid "The user balance is not enough for express."
+msgstr "用户余额不足，不足以开票。"
+
+msgid "The apply for invoice flow is not exist."
+msgstr "申请发票流水不存在。"
+
+msgid "Only pending invoice apply can be modified."
+msgstr "只有待审核的发票申请才能修改。"
+
+msgid "The Invoice log %s can not be deleted."
+msgstr "发票申请记录 %s 不能被删除。"
+
+msgid "Invoice has already exist."
+msgstr "开票信息已存在。"
+
+msgid "Invoice is not found."
+msgstr "开票信息不存在。"
+
+msgid "The invoice has been used for invoicing."
+msgstr "开票信息已用于开发票。"
+
+msgid "Bank of invoice can not be empty."
+msgstr "开票信息的开户银行不能为空。"
+
+msgid "Bank account of invoice can not be empty."
+msgstr "开票信息的银行账号不能为空。"
+
+msgid "Tax registration number can not be empty."
+msgstr "税务登记证号不能为空。"
+
+msgid "Registration address can not be empty."
+msgstr "注册地址不能为空。"
+
+msgid "Registered telephone can not be empty."
+msgstr "注册固定电话不能为空。"
+
+msgid "Invoice header can not be empty."
+msgstr "发票抬头不能为空。"
+
+msgid "Only invoice information in the review can be modified."
+msgstr "只有审核中的发票信息才可以修改。"
+
+msgid "Account balance is insufficient to cover the invoice fee and express fee."
+msgstr "账户余额不足以支付发票手续费以及快递费。"
+
+msgid "Available amount for apply invoice is insufficient."
+msgstr "可申请发票金额不足。"
+
+msgid "The invoice address has been used for invoicing."
+msgstr "发票地址已被用于开发票。"
+
+msgid "Only pending invoice apply can be reviewed."
+msgstr "只有待审核的发票申请才能审核。"
+
+msgid "Only the approved invoice application can modify the delivery information."
+msgstr "只有审核过的发票申请才可以修改快递信息。"
+
+msgid "The max amount for a single invoice is %s."
+msgstr "单张发票的最大开票额度是 %s。"
+
+msgid "More than %s can apply for a special invoice."
+msgstr "超过%s才可以申请专用发票。"
+
+msgid "%s is boss user, invoicing is not allowed."
+msgstr "%s 是个boss用户，不允许开发票。"
+
+msgid "Order %s not found."
+msgstr "用户订单 %s 不存在。"
+
+msgid "Cdn pay log %s not found."
+msgstr "CDN实时消费流水 %s 不存在。"
+
+msgid "Cdn pay %s not found."
+msgstr "CDN消费流水 %s 不存在。"
+
+msgid "The coupon balance is not enough to pay."
+msgstr "代金券余额不足，无法支付。"
+
+msgid "Consumption record is not exist."
+msgstr "消费记录不存在。"
+
+msgid "Workorder category %s not found."
+msgstr "工单类型 %s 不存在。"
+
+msgid "You do not have permission to operate the workorder."
+msgstr "您没有权限操作此工单。"
+
+msgid "The transfer user can not be self."
+msgstr "被转交人不能是自己。"
+
+msgid "The workorder has been closed or completed."
+msgstr "该工单已关闭或者已完结。"
+
+msgid "Workorder log %s not found."
+msgstr "工单沟通记录 %s 不存在。"
+
+msgid "Workorder %s not found."
+msgstr "工单 %s 不存在。"
+
+msgid "Please certify your mobile and email."
+msgstr "请先验证手机号跟邮箱。"
+
+msgid "Exceeded the access key num limit."
+msgstr "秘钥申请数量超过最大限制。"
+
+msgid "Access key %s not found."
+msgstr "秘钥%s 不存在。"
+
+msgid "Please stop the Access key %s."
+msgstr "请先暂停该秘钥。"
+
+msgid "This agent %s is exist already."
+msgstr "该代理已经存在。"
+
+msgid "The agent record has been already deleted,active again?"
+msgstr "该代理已经删除，是否恢复?"
+
+msgid "Agent apply is not found."
+msgstr "代理申请不存在。"
+
+msgid "Agent %s not found."
+msgstr "代理 %s 不存在。"
+
+msgid "Please resubmit the agent apply."
+msgstr "请重新提交代理后再审核。"
+
+msgid "The status of the agent has not changed."
+msgstr "提交的审核状态参数未改变。"
+
+msgid "Only the agent user can set payment parameters."
+msgstr "只有代理用户可设置支付参数。"
+
+msgid "You have already applied for an agent."
+msgstr "您已经通过了代理商申请。"
+
+msgid "Please configure the system payment configuration first."
+msgstr "请先配置系统支付参数。"
+
+msgid "Agent domain %s has been existed."
+msgstr "代理商域名 %s已存在。"
+
+msgid "%s has applied for an agent."
+msgstr "%s 已申请过代理商。"
+
+msgid "%s has not applied for an agent."
+msgstr "%s 未申请过代理商。"
+
+msgid "%s has been an agent."
+msgstr "%s 已经是一个代理商。"
+
+msgid "Only personal or enterprise account can apply for an agent."
+msgstr "只有个人或者企业账号才能申请代理商。"
+
+msgid "Agent qualification of %s has been reviewed."
+msgstr "%s 的代理商资质已经审核过了。"
+
+msgid "Reason can not be empty where the review fails."
+msgstr "审核拒绝的时候，拒绝理由不能为空。"
+
+msgid "The reason for failure of the review is over max length 255."
+msgstr "审核拒绝的理由不能超过255个字符。"
+
+msgid "Only agent in review can be updated."
+msgstr "只有审核中的代理才能更新。"
+
+msgid "Email %s not found."
+msgstr "邮箱 %s 不存在。"
+
+msgid "The email %s is not belong to you."
+msgstr "该邮箱 %s 已被使用。"
+
+msgid "The email %s has been certified."
+msgstr "邮箱 %s 已验证。"
+
+msgid "Exceeded the email certify limit."
+msgstr "邮箱校验次数超过最大限制。"
+
+msgid "The certify captcha has been sent. Please check the message."
+msgstr "验证码已发送，请注意查收。"
+
+msgid "User contact %s not found."
+msgstr "用户联系方式 %s 不存在。"
+
+msgid "User contact is not found."
+msgstr "联系人信息未找到。"
+
+msgid "The certify captcha has expired."
+msgstr "验证码超时。"
+
+msgid "The certify captcha error."
+msgstr "验证码错误。"
+
+msgid "The number of times the verification code is sent reaches the maximum limit."
+msgstr "验证码的发送次数达到最大限制。"
+
+msgid "The mobile %s has been certified."
+msgstr "手机号 %s 已验证。"
+
+msgid "Mobile %s not found."
+msgstr "手机号 %s 不存在。"
+
+msgid "%s is not your mobile phone."
+msgstr "%s 不是您的手机号。"
+
+msgid "The mobile %s is not belong to you."
+msgstr "该手机号 %s 已被使用。"
+
+msgid "Exceeded the mobile certify limit."
+msgstr "手机号校验次数超过最大限制。"
+
+msgid "User connection is exist already."
+msgstr "用户关系已经存在。"
+
+msgid "User connection %s not found."
+msgstr "用户关系 %s 不存在。"
+
+msgid "User connection not found."
+msgstr "用户关系不存在。"
+
+msgid "Contact people name is over max length 64."
+msgstr "联系人姓名不能超过64个字符。"
+
+msgid "Sub account is not found."
+msgstr "子账号不存在。"
+
+msgid "Sub account has no user group."
+msgstr "子账号没有用户组。"
+
+msgid "%s is not a sub account."
+msgstr "%s不是个子账号。"
+
+msgid "Only the agent sub-account can modify the type."
+msgstr "只有代理商子账号才可以修改类型。"
+
+msgid "Default user group has been existed."
+msgstr "默认用户组已存在。"
+
+msgid "Please unbind the authorized resources."
+msgstr "请先解绑授权的资源。"
+
+msgid "No permission to operate the user group %s."
+msgstr "无权限操作用户组 %s。"
+
+msgid "User group is not found."
+msgstr "用户组不存在。"
+
+msgid "User group %s not found."
+msgstr "用户组 %s 不存在。"
+
+msgid "The user group name is over max length 32."
+msgstr "用户组名称不能超过32个字符。"
+
+msgid "The user group note is over max length 255."
+msgstr "用户组备注不能超过255个字符。"
+
+msgid "The user group name can not be empty."
+msgstr "用户组名称不能为空。"
+
+msgid "The user group %s has been existed."
+msgstr "用户组 %s已存在。"
+
+msgid "There are sub accounts bind to the user group %s."
+msgstr "有子账号绑定了用户组 %s。"
+
+msgid "User group resource has been existed already."
+msgstr "用户组资源记录已经存在。"
+
+msgid "User group resource %s not found."
+msgstr "用户组资源记录 %s 不存在。"
+
+msgid "User group role has been existed already."
+msgstr "用户组角色记录已经存在。"
+
+msgid "User group role %s not found."
+msgstr "用户组角色记录 %s 不存在。"
+
+msgid "The maximum discount rate is 1000%."
+msgstr "最大折扣率1000%。"
+
+msgid "The group %s permission %s has been existed."
+msgstr "用户组%s已经存在权限%s。"
+
+msgid "Only verified real-name certification can be renew."
+msgstr "仅审核通过的实名认证才可撤销。"
+
+msgid "User identity company %s has been existed already."
+msgstr "该用户企业认证 %s 已经存在。"
+
+msgid "Company credit_code %s has been existed already."
+msgstr "企业社会信用代码 %s 已经存在。"
+
+msgid "User identity company %s not found."
+msgstr "该用户企业认证 %s 不存在"
+
+msgid "The user identity company record can not be edited."
+msgstr "该用户企业认证不能被编辑。"
+
+msgid "User identity personal %s has been existed already."
+msgstr "该用户个人认证 %s 已经存在。"
+
+msgid "id_no %s has been existed already."
+msgstr "该用户身份证 %s 已经被使用。"
+
+msgid "User identity personal %s not found."
+msgstr "该用户 %s 个人认证不存在。"
+
+msgid "The user identity personal record can not be edited."
+msgstr "该用户个人认证不能被编辑。"
+
+msgid "User identity personal %s state invalid."
+msgstr "该用户 %s 个人认证还没通过审核，无法进行认证升级。"
+
+msgid "You have not passed real-name certification and cannot upgrade."
+msgstr "您还未通过实名认证，无法进行认证升级。"
+
+msgid "Exceeded the identity verify limit."
+msgstr "打款校验次数超过最大限制。"
+
+msgid "Invalid identity money."
+msgstr "打款金额不正确。"
+
+msgid "Invalid password."
+msgstr "密码不正确。"
+
+msgid "The username %s has been existed already."
+msgstr "该用户名 %s 已经存在。"
+
+msgid "The username contains illegal characters."
+msgstr "用户名包含非法字符。"
+
+msgid "The account is already a sub-account."
+msgstr "该账号已经是一个子账号。"
+
+msgid "The user data can not be changed."
+msgstr "该用户不能被编辑。"
+
+msgid "The old password mismatch."
+msgstr "老密码不正确。"
+
+msgid "The role code %s already exist."
+msgstr "该角色编码 %s 已经存在。"
+
+msgid "The role name %s already exist."
+msgstr "该角色名称 %s 已经存在。"
+
+msgid "The role %s not found."
+msgstr "该角色 %s 不存在。"
+
+msgid "The role can not be loaded."
+msgstr "角色不存在。"
+
+msgid "Avatar is over max length 255."
+msgstr "头像地址不能超过255个字符。"
+
+msgid "User note is over max length 255."
+msgstr "用户的备注不能超过255个字符。"
+
+msgid "Sub account note is over max length 255."
+msgstr "子账号的备注不能超过255个字符。"
+
+msgid "Sub account %s has been existed."
+msgstr "该子账号 %s 已经存在。"
+
+msgid "Sub account %s not found."
+msgstr "该子账号 %s 不存在。"
+
+msgid "The user is not sub-account."
+msgstr "该用户不是一个子账号。"
+
+msgid "The user is not exist."
+msgstr "用户不存在。"
+
+msgid "You have no permission to switch."
+msgstr "您没有权限做用户切换操作。"
+
+msgid "Invalid wechat config."
+msgstr "微信参数不正确。"
+
+msgid "The wechat addition item is invalid."
+msgstr "用户微信附加信息异常。"
+
+msgid "Agent %s wechat config not found."
+msgstr "代理 %s 微信支付配置信息不存在。"
+
+msgid "Wechat config %s not found."
+msgstr "微信支付配置信息 %s 不存在。"
+
+msgid "Agent %s wechat config has been existed already."
+msgstr "代理 %s 微信支付配置信息已经存在。"
+
+msgid "No write permission."
+msgstr "没有写权限。"
+
+msgid "Upload success."
+msgstr "上传成功。"
+
+msgid "The file upload failed."
+msgstr "文件上传失败。"
+
+msgid "Invalid file extension."
+msgstr "文件后缀错误。"
+
+msgid "Only file with extension: %s are allowed to upload."
+msgstr "允许上传文件类型: %s。"
+
+msgid "Invalid pay amount %s."
+msgstr "无效的消费金额 %s。"
+
+msgid "The role %s permission %s has been existed."
+msgstr "角色%s的URL权限%s已经存在。"
+
+msgid "User's %s mail conf has already exist."
+msgstr "用户 %s 的邮件配置已存在。"
+
+msgid "User's %s mail conf not found."
+msgstr "用户 %s 的邮件配置不粗在。"
+
+msgid "The email template has been existed."
+msgstr "邮件模板已经存在。"
+
+msgid "The email template is not exist."
+msgstr "邮件模板不存在。"
+
+msgid "The user account does not exist or email verification is invalid."
+msgstr "用户账户不存在或邮件未通过验证。"
+
+msgid "The sales uid %s is not exist."
+msgstr "ID为%s的销售不存在。"
+
+msgid "The role id %s is not exist."
+msgstr "ID为%s的角色不存在。"
+
+msgid "The user subscribe has already exist."
+msgstr "该用户提醒设置已存在。"
+
+msgid "Invalid user subscribe type %s."
+msgstr "无效的用户提醒设置类型 %s。"
+
+msgid "Invalid user subscribe event_type %s."
+msgstr "无效的用户提醒设置事件项 %s。"
+
+msgid "Please complete the real name certification first."
+msgstr "请先完成实名认证。"
+
+msgid "Invalid user agent product %s."
+msgstr "无效的代理产品 %s。"
+
+msgid "Invalid user agent industry %s."
+msgstr "无效的行业类别 %s。"
+
+msgid "The internal message %s not found."
+msgstr "站内信 %s 不存在。"
+
+msgid "Sub account can not be agent."
+msgstr "子账号不能成为代理。"
+
+msgid "The sub-account can not be switch to other users."
+msgstr "子账号无权限切换用户。"
+
+msgid "Freeze record can not be deleted."
+msgstr "冻结资金记录不能被删除。"
+
+msgid "User tag is not found."
+msgstr "标签不存在。"
+
+msgid "User tag %s not found."
+msgstr "标签 %s 不存在。"
+
+msgid "%s has bind tag %s."
+msgstr "%s已绑定标签%s。"
+
+msgid "Resource binding record is not exist."
+msgstr "资源绑定记录不存在。"
+
+msgid "Exceed the maximum number of send alarm."
+msgstr "余额预警发送次数超出范围。"
+
+msgid "Different user workorder can not be merged."
+msgstr "不同用户的工单无法合并。"
+
+msgid "Different type workorder can not be merged."
+msgstr "不同类型的工单无法合并。"
+
+msgid "Different category workorder can not be merged."
+msgstr "不同分类的工单无法合并。"
+
+msgid "Deleted、merged、closed、completed workorder can not be merged."
+msgstr "已删除、已合并、已撤销、已完成的工单无法合并。"
+
+msgid "Deleted、merged workorder can not be edited."
+msgstr "已删除、已合并过的工单无法再次编辑。"
+
+msgid "Only personal type can apply personal identity."
+msgstr "只有个人用户才能申请个人实名认证。"
+
+msgid "Personal type can not apply company identity."
+msgstr "个人用户不能申请企业实名认证。"
+
+msgid "No permission to operate the resource %s."
+msgstr "无权限操作资源 %s。"
+
+msgid "No permission to operate the sub account."
+msgstr "无权限操作此子账号。"
+
+msgid "Error verification code receiving address."
+msgstr "错误的验证码接收地址。"
+
+msgid "%s is not your mobile."
+msgstr "%s不是您的手机号。"
+
+msgid "%s is not your email."
+msgstr "%s不是您的邮箱。"
+
+msgid "Invalid send code action."
+msgstr "错误的验证码发送动作。"
+
+msgid "Please verify your mobile first."
+msgstr "请先验证您的手机号。"
+
+msgid "Please verify your email first."
+msgstr "请先验证您的邮箱。"
+
+msgid "Please verify your mobile %s first."
+msgstr "请先验证您的手机号 %s。"
+
+msgid "Please verify your email %s first."
+msgstr "请先验证您的邮箱 %s。"
+
+msgid "Please validate your mobile %s first."
+msgstr "请先校验您的手机号%s。"
+
+msgid "Please validate your email %s first."
+msgstr "请先校验您的邮箱 %s。"
+
+msgid "Invalid mobile or email."
+msgstr "错误的手机号或者邮箱。"
+
+msgid "The new password is not the same as the confirm password."
+msgstr "新密码与确认密码不一样。"
+
+msgid "You should add your mobile first in user profile."
+msgstr "请先在用户资料中添加您的手机号。"
+
+msgid "%s has been existed."
+msgstr "%s 已存在。"
+
+msgid "Your mobile has been verified."
+msgstr "您的手机号已验证。"
+
+msgid "Mobile has been existed."
+msgstr "手机号已存在。"
+
+msgid "You should add your email first in user profile."
+msgstr "请先在用户资料中添加您的邮箱。"
+
+msgid "Your mobile has been verified."
+msgstr "您的邮箱已验证。"
+
+msgid "Email has been existed."
+msgstr "邮箱已存在。"
+
+msgid "Agent account can not modify account type."
+msgstr "代理账号不能修改账号类型。"
+
+msgid "Enterprise account can not change account type."
+msgstr "企业账号不能变更账号类型。"
+
+msgid "Personal account can only be changed to enterprise account."
+msgstr "个人账号只能变更为企业账号。"
+
+msgid "Please disable the sub-account %s first."
+msgstr "请先禁用子账号 %s。"
+
+msgid "Only agent account can set site configure."
+msgstr "只有代理帐户能进行站点设置。"
+
+msgid "SMS signature allows only 1 to 4 Chinese characters."
+msgstr "短信签名只允许1到4个汉字。"
+
+msgid "Password can not be empty."
+msgstr "密码不能为空。"
+
+msgid "Password length is limited between 6 and 16 characters."
+msgstr "密码长度限制6 - 16个字符之间。"
+
+msgid "Password must contain numbers and letters."
+msgstr "密码必须包含数字和字母。"
+
+msgid "The balance is not enough to pay the deposit."
+msgstr "余额不足以支付保证金。"
+
+msgid "The balance of %s has been 0."
+msgstr "%s的余额已经是0。"
+
+msgid "The withdrawal amount cannot exceed the account balance."
+msgstr "提现金额不能大于账户余额。"
+
+msgid "Cash withdrawal amount is insufficient."
+msgstr "可提现金额不足。"
+
+msgid "Only pending withdrawal records can be modified."
+msgstr "只有处理中的提现记录可以修改。"
+
+msgid "Only pending withdrawal records can be reviewed."
+msgstr "只有处理中的提现记录可以审核。"
+
+msgid "Account balance is insufficient to pay the handling fee."
+msgstr "账户余额不足以支付手续费。"
+
+msgid "Account balance is insufficient to pay %s."
+msgstr "账户余额不足以支付 %s。"
+
+# CDN
+msgid "Invalid cdn ipdb state."
+msgstr "错误的CDN扩展数据库状态。"
+
+msgid "The cdn ip db is not exist."
+msgstr "CDN扩展数据库不存在。"
+
+msgid "The cdn ipdb has been paused."
+msgstr "CDN扩展数据库已暂停。"
+
+msgid "The cdn ipdb has been opened."
+msgstr "CDN扩展数据库已开启。"
+
+msgid "The cdn domain is not exist."
+msgstr "加速频道不存在。"
+
+msgid "The cdn domain: %s is not exist."
+msgstr "加速频道: %s不存在。"
+
+msgid "The cdn domain %s is invalid."
+msgstr "加速域名 %s格式不正确。"
+
+msgid "You are not authorized to operate the domain %s."
+msgstr "无权限操作加速频道 %s。"
+
+msgid "%s has been exist."
+msgstr "%s已经存在。"
+
+msgid "Exceed to 255 characters are allowed for a domain name."
+msgstr "加速域名长度不能超过255个字符。"
+
+msgid "The domain name has been already deleted, active again?"
+msgstr "加速频道已经删除，确认恢复么？"
+
+msgid "%s has no icp."
+msgstr "%s未备案。"
+
+msgid "The ssl cert conf can not be empty."
+msgstr "SSL证书配置不能为空。"
+
+msgid "The cache conf can not be empty."
+msgstr "缓存配置不能为空。"
+
+msgid "Invalid cache type."
+msgstr "错误的缓存类型。"
+
+msgid "Exceed to 32 characters are allowed for icp."
+msgstr "ICP备案号不能超过32个字符。"
+
+msgid "The specified config does not exist."
+msgstr "该配置不存在。"
+
+msgid "The config is conflict."
+msgstr "该配置有冲突。"
+
+msgid "Exceed to 64 characters are allowed for a bucket name."
+msgstr "bucket名称不能超过64个字符。"
+
+msgid "Exceed to 255 characters are allowed for note."
+msgstr "备注不能超过255个字符。"
+
+msgid "Universal domain must set cache key."
+msgstr "泛域名必须设置cache key。"
+
+msgid "Universal domain must set billing host."
+msgstr "泛域名必须设置计费host。"
+
+msgid "Exceed to 255 characters are allowed for test url."
+msgstr "监控URL不能超过255个字符。"
+
+msgid "The test_url does not match the domain name."
+msgstr "监控URL与加速频道不匹配。"
+
+msgid "Invalid source type."
+msgstr "错误的源站类型。"
+
+msgid "90 days data can be queried at most."
+msgstr "您最多可选择查看90天的数据。"
+
+msgid "30 days data can be queried at most."
+msgstr "您最多可选择查看30天的数据。"
+
+msgid "Time period should less than three month."
+msgstr "您选择的时间段必须小于3个月。"
+
+msgid "Time period should less than one week."
+msgstr "您选择的时间段必须小于一周。"
+
+msgid "Time period should be in three month."
+msgstr "时间范围不超过3个月。"
+
+msgid "Time %s must be less than now."
+msgstr "您选择的时间 %s 需要小于当前时间。"
+
+msgid "Time %s format error."
+msgstr "时间格式错误。"
+
+msgid "The parameter %s is malformed. the expected format is yyyy-MM-dd HH:mm."
+msgstr "参数 %s 格式错误，请使用yyyy-mm-dd格式。"
+
+msgid "Start_time or end_time is miss match."
+msgstr "开始时间和结束时间不匹配。"
+
+msgid "Start_time and end_time is illegal."
+msgstr "开始时间和结束时间不合法。"
+
+msgid "Start_time and end_time can not be single."
+msgstr "开始时间与结束时间均为必填。"
+
+msgid "Specified start_time or end_time is malformed."
+msgstr "开始时间或结束时间格式错误。"
+
+msgid "Specified end_time does not match the specified start_time."
+msgstr "请检查时间设置是否正确，结束时间不能小于或等于开始时间。"
+
+msgid "Time parameters and query scope cannot be passed at the same time."
+msgstr "时间参数与查询粒度不能同时存在。"
+
+msgid "No more than %s cdn domains can be passed when return data by cdn domain."
+msgstr "按频道一次最多查询%s个频道。"
+
+msgid "The edgecast domain is empty."
+msgstr "Edgecast渠道还没有任何渠道。"
+
+msgid "Your domain %s type is not %s."
+msgstr "频道%s业务类型%s无效。"
+
+msgid "Your CDN service is suspended."
+msgstr "您的CDN服务已欠费停止。"
+
+msgid "Your cdn service %s has opened."
+msgstr "CDN %s 服务已开通，请勿重复开通。"
+
+msgid "Your account does not open CDN service %s yet."
+msgstr "您的账户未开通CDN %s 服务，请开通后重试。"
+
+msgid "You have an order not yet effective."
+msgstr "您有未生效的订单。"
+
+msgid "You do not have permission to operate the domain."
+msgstr "您没有权限操作该域名。"
+
+msgid "Top level domain is not exist."
+msgstr "根域不存在。"
+
+msgid "This domain name is exist already."
+msgstr "该域名已经添加。"
+
+msgid "This domain is in the protected mode. if you want to do this operation, please contact us!"
+msgstr "此域名处于被保护模式。如果您想做这个操作，请联系我们。"
+
+msgid "The specified domain %s is configuring, please retry later."
+msgstr "频道 %s 正在配置中，请您稍后再试。"
+
+msgid "there is too many refresh task, please wait a moment."
+msgstr "刷新任务太多，请您稍后再试。"
+
+msgid "You've exceeded the prescribed refresh limits."
+msgstr "超出当日刷新限制。今日刷新数已用完。您可以通过刷新接口查询今日的刷新次数。"
+
+msgid "You've exceeded the prescribed refresh limits per minute."
+msgstr "每分钟刷新频率超过上限。"
+
+msgid "The size of prefetch url is bigger than 1000."
+msgstr "预热url个数请勿超过1000."
+
+msgid "Prefetch queue is full, please try again later!"
+msgstr "预加载队列已满，请您稍后再试。"
+
+msgid "The resource group does not exist."
+msgstr "资源组不存在。"
+
+msgid "The certificate name you provided is over the max length 128!"
+msgstr "证书名称不能超过128个字符。"
+
+msgid "The certificate name is duplicated."
+msgstr "证书已存在。"
+
+msgid "The certificate is expired."
+msgstr "证书过期了。"
+
+msgid "The certificate you provided is malformed!"
+msgstr "证书格式不正确。"
+
+msgid "The certificate is not exist or its status is error."
+msgstr "证书不存在或证书状态错误。"
+
+msgid "The certificate format is error."
+msgstr "证书格式错误。"
+
+msgid "The certificate you provided is over the max length!"
+msgstr "证书或私钥长度超出限制。"
+
+msgid "The private Key you provided is malformed!"
+msgstr "私钥格式不正确。"
+
+msgid "The private key is not null."
+msgstr "私钥不能为空。"
+
+msgid "The private key format is error."
+msgstr "私钥格式错误。"
+
+msgid "The private Key does not math the specified certificate!"
+msgstr "私钥不匹配该证书。"
+
+msgid "Please open https first."
+msgstr "请先开通HTTPS安全加速功能。"
+
+msgid "Not find the certificate info."
+msgstr "证书不存在。"
+
+msgid "The number of setting black list times is over limit today."
+msgstr "今日黑名单设置次数超过限制。"
+
+msgid "The number of domain is over the limit."
+msgstr "域名已达上限。"
+
+msgid "The domain %s provided is offline."
+msgstr "域名已下线。"
+
+msgid "The domain %s provided does not exist."
+msgstr "域名不存在或不属于当前用户。请检查您填写的域名书写是否正确，或者域名是否在当前账号中，查看域名是否过期。"
+
+msgid "The domain %s provided does not belong to you."
+msgstr "域名不存在或不属于当前用户。请检查您填写的域名书写是否正确，或者域名是否在当前账号中，查看域名是否过期。"
+
+msgid "The domain %s is not registered."
+msgstr "域名尚未备案，请先备案。"
+
+msgid "The domain is not online, please check the domain status and try again later."
+msgstr "域名未在线，请检查域名状态，稍后再试。"
+
+msgid "No data found for this domain."
+msgstr "该域名无数据。"
+
+msgid "Failed to configure the provided domain."
+msgstr "频道配置失败。"
+
+msgid "Domain name limit between 1 and 100."
+msgstr "域名数量限制为1到100。"
+
+msgid "Specified sources is malformed."
+msgstr "参数sources格式错误。可以是IP或域名；IP支持最多20个，以逗号区分，域名只能输入一个。IP与域名不能同时输入。"
+
+msgid "Source name can not equal to domain name."
+msgstr "源站地址不能与频道名相同。"
+
+msgid "Sources ip or source domain check failed, please input right source."
+msgstr "源IP或源域检查不合法，请输入正确的源。"
+
+msgid "Source ip num over limit."
+msgstr "回源IP个数超过限制。"
+
+msgid "Extensive domain not supported."
+msgstr "该操作不支持泛域名。"
+
+msgid "Invalid cdn type."
+msgstr "错误的cdn加速类型。"
+
+msgid "Operation not supported this cdn type."
+msgstr "参数cdn_type不支持该参数值， 取值：static：静态；download：下载；video：音视频点播；live：直播流媒体。"
+
+msgid "Extensive domain not supported for this cdn type."
+msgstr "泛域名不支持该业务类型."
+
+msgid "Extensive domain and the domain begins with 'all.' can not exist at the same time."
+msgstr "泛域名与all.开头域名不能同时存在。"
+
+msgid "Extensive domain and corresponding specific domain are mutually exclusive."
+msgstr "泛域名和同级精确域名互斥，请重新添加。"
+
+msgid "It's not allowed to do this operation because of the current status of resource-group."
+msgstr "资源组当前状态不允许进行此操作。"
+
+msgid "Check icp info failed, please try again later."
+msgstr "检查ICP信息失败，请稍后再试。"
+
+msgid "Ssl package %s not found."
+msgstr "证书套餐 %s 不存在。"
+
+msgid "Ssl package is not found."
+msgstr "证书套餐不存在。"
+
+msgid "Ssl package %s has been existed."
+msgstr "证书套餐 %s已存在。"
+
+msgid "Invalid cdn service type."
+msgstr "错误的加速类型。"
+
+msgid "The cdn group is not exist."
+msgstr "CDN设备组不存在。"
+
+msgid "The cdn group has been closed."
+msgstr "CDN设备组已关闭。"
+
+msgid "The region: %s is not exist."
+msgstr "地区: %s不存在。"
+
+msgid "The country: %s is not exist."
+msgstr "国家: %s不存在。"
+
+msgid "%s is not valid regular expression."
+msgstr "%s不是一个合法的正则表达式。"
+
+msgid "%s is not a valid url."
+msgstr "%s不是一个合法的URL。"
+
+msgid "%s is not valid dir."
+msgstr "%s不是一个合法的目录。"
+
+msgid "%s has been used for source."
+msgstr "%s已被用作源站。"
+
+msgid "Invalid live input type."
+msgstr "错误的直播输入方式。"
+
+msgid "The cdn domain is not opened."
+msgstr "加速域名未开启。"
+
+msgid "%s is not opened."
+msgstr "%s未开启。"
+
+msgid "%s has been closed."
+msgstr "%s已关闭。"
+
+msgid "%s has been stopped."
+msgstr "%s已暂停。"
+
+msgid "%s has not verified."
+msgstr "%s还未审核。"
+
+msgid "It can only be opened when it is closed or stopped."
+msgstr "暂停、关闭状态下才可以开启。"
+
+msgid "The cdn vm group is not exist."
+msgstr "cdn设备组不存在。"
+
+msgid "The cdn vm group %s is not exist."
+msgstr "cdn设备组%s不存在。"
+
+msgid "The cdn vm group has been closed."
+msgstr "cdn设备组已关闭。"
+
+msgid "There are no edge vms in group."
+msgstr "该设备组没有边缘设备。"
+
+msgid "There is related vm, it cannot be deleted."
+msgstr "请先删除关联的设备。"
+
+msgid "There is related pool, it cannot be deleted."
+msgstr "请先删除关联的资源池。"
+
+msgid "Failed to parse url host."
+msgstr "解析URL失败。"
+
+msgid "Please refresh urls that has the same domain."
+msgstr "请提交同一个域名的URL。"
+
+msgid "There is no accelerated domain name for this host %s."
+msgstr "HOST %s 系统中没有匹配到同样的加速域名。"
+
+msgid "Cache path is required."
+msgstr "必须设置缓存路径。"
+
+msgid "Cache path must be empty when cache home."
+msgstr "缓存首页时缓存路径为空。"
+
+msgid "The cache pattern allows only letters, Numbers and commas."
+msgstr "缓存后缀只允许字母，数字和逗号。"
+
+msgid "Cache directory format error, such as cache image directory must be /image/."
+msgstr "缓存目录格式错误，例如：/image/。"
+
+msgid "If back source is a domain, it can only set one."
+msgstr "域名作为备份源站，只能设置一个。"
+
+msgid "The remap keyword only can be: %s"
+msgstr "remap关键字只能是: %s。"
+
+msgid "Missing remap item: %s"
+msgstr "缺少remap项: %s。"
+
+msgid "The cdn vm is not exist."
+msgstr "cdn设备不存在。"
+
+msgid "The cdn vm %s is not exist."
+msgstr "ID为%s的cdn设备不存在。"
+
+msgid "The cdn vm group %s is not exist."
+msgstr "ID为%s的cdn设备组不存在。"
+
+msgid "The cdn vm is not a fake source."
+msgstr "cdn设备不是伪源设备。"
+
+msgid "The cdn vm group has been closed."
+msgstr "设备组已关闭。"
+
+msgid "The cdn vm group has been opened."
+msgstr "设备组已开启。"
+
+msgid "The vm group has been bound vm."
+msgstr "请先关闭该设备组绑定的设备。"
+
+msgid "The cdn vm has been closed."
+msgstr "该设备已关闭。"
+
+msgid "The cdn vm is not closed."
+msgstr "该设备未关闭。"
+
+msgid "The cdn vm has been opened."
+msgstr "该设备已开启，请先关闭后再操作。"
+
+msgid "The cdn vm has been related script."
+msgstr "请先删除该设备关联的脚本。"
+
+msgid "The monitor or resolve of related cdn pool is not opened."
+msgstr "该设备关联的资源池监控或解析未开启。"
+
+msgid "Only the core、origin、storage vm type is allowed to initialize the configuration."
+msgstr "仅允许设备类型为核心、伪源、存储初始化配置。"
+
+msgid "The vm group is not bound to any vm."
+msgstr "该设备组没有绑定任何设备。"
+
+msgid "Invalid source domain address."
+msgstr "错误的源站域名地址。"
+
+msgid "The source name can not equal to existed cdn domain."
+msgstr "源站域名不能与已有的加速域名相同。"
+
+msgid "The source name can not equal to domain name."
+msgstr "源站域名不能与加速域名相同。"
+
+msgid "The source address is not exist."
+msgstr "源站地址不存在。"
+
+msgid "Only can set %s sources at most."
+msgstr "源站最多只能设置%s个。"
+
+msgid "If source is a domain, it can only set one."
+msgstr "域名作为源站，只能设置一个。"
+
+msgid "Invalid ssl cert %s."
+msgstr "错误的ssl证书%s。"
+
+msgid "Invalid certificate common name."
+msgstr "证书解析错误，缺少common name。"
+
+msgid "Invalid ssl certificate."
+msgstr "错误的ssl证书。"
+
+msgid "The certificate does not belong to the domain %s."
+msgstr "证书不属于域名%s。"
+
+msgid "Certificate or private key certificate is empty."
+msgstr "证书或者私钥为空。"
+
+msgid "The ssl private key contains password."
+msgstr "私钥包含密码。"
+
+msgid "The certificate does not match the private key."
+msgstr "证书与私钥不匹配。"
+
+msgid "Intermediate certificate error."
+msgstr "中级证书错误。"
+
+msgid "Invalid ssl expire time."
+msgstr "证书有效期错误。"
+
+msgid "Invalid key %s."
+msgstr "错误的键%s。"
+
+msgid "The key %s miss local_conf conf constraint."
+msgstr "%s缺少local_conf。"
+
+msgid "%s miss constraint conf."
+msgstr "%s缺少constraint配置。"
+
+msgid "The value of %s is not a string."
+msgstr "%s的值不是个字符串。"
+
+msgid "The value of %s is not an integer."
+msgstr "%s的值不是个整型。"
+
+msgid "The value of %s is not an ip address."
+msgstr "%s的值不是个IP地址。"
+
+msgid "The range of %s is %s."
+msgstr "%s的取值范围是%s。"
+
+msgid "Invalid source ip address."
+msgstr "错误的源站IP地址。"
+
+msgid "The source ip address can not be 127.0.0.1."
+msgstr "127.0.0.1不能作为源站IP地址。"
+
+msgid "Http header conf type: %s is not exist."
+msgstr "HTTP头配置类型: %s不存在。"
+
+msgid "Http header action type: %s is not exist."
+msgstr "HTTP头动作类型: %s不存在。"
+
+msgid "Invalid http header: %s."
+msgstr "错误的http头: %s."
+
+msgid "The value of %s can not be empty."
+msgstr "%s的值不能为空。"
+
+msgid "The http header conf of %s has been existed."
+msgstr "HTTP头: %s的配置已经存在。"
+
+msgid "There is no need to modify the field: %s."
+msgstr "无需更新字段: %s。"
+
+msgid "The http header conf is not found."
+msgstr "未找到对应的http头配置。"
+
+msgid "The cdn domain itself does not need to add to the cache key."
+msgstr "加速频道自身无需加入多域名共享缓存。"
+
+msgid "%s has cache key, please go to %s to set up cache key."
+msgstr "%s已配置共享缓存，请前往%s设置共享缓存。"
+
+msgid "Invalid streaming type."
+msgstr "错误的拖拽类型。"
+
+msgid "Streaming conf is not found."
+msgstr "拖拽配置未找到。"
+
+msgid "Streaming conf of %s is not found."
+msgstr "%s类型的拖拽配置未找到。"
+
+msgid "Streaming conf of %s has been opened."
+msgstr "%s类型的拖拽配置已开启。"
+
+msgid "Streaming conf of %s has been closed."
+msgstr "%s类型的拖拽配置已经关闭。"
+
+msgid "The user's cdn conf is not found."
+msgstr "用户暂无CDN配置。"
+
+msgid "The deny url is not exist."
+msgstr "限制URL不存在。"
+
+msgid "Submit %s deny urls at most evert time."
+msgstr "每次最多提交%s条限制URL。"
+
+msgid "You must enter the URL of the same domain name."
+msgstr "必须输入同一个域名的URL。"
+
+msgid "There is no deny url."
+msgstr "无任何限制URL。"
+
+msgid "The cdn domain: %s does not support adding deny url."
+msgstr "加速频道: %s不支持添加限制URL。"
+
+msgid "There is no core service equipment."
+msgstr "无核心服务设备。"
+
+msgid "The relate vm %s is not exist."
+msgstr "ID为%s的关联设备不存在。"
+
+msgid "The monitor url can not be empty."
+msgstr "监控URL地址不为空。"
+
+msgid "Only one group you can push configuration once time."
+msgstr "每次只能初始化同一设备组的设备。"
+
+msgid "Only one type you can push configuration once time."
+msgstr "每次只能初始化同一种类型的设备。"
+
+msgid "The domain group id does not equal to input group_id."
+msgstr "频道所属设备组和传入的group_id不匹配。"
+
+msgid "The domain of push does not empty."
+msgstr "没有任何下发域名，请检查提交的参数。"
+
+msgid "The group of push does not empty."
+msgstr "没有匹配到下发设备组，请检查提交的参数。"
+
+msgid "Only the core device can be push configuration."
+msgstr "仅核心设备可下发配置。"
+
+msgid "The vm device is not allowed to be push configuration."
+msgstr "该设备下发配置未启用。"
+
+msgid "The vm device is closed."
+msgstr "该设备已关闭。"
+
+msgid "The vm %s is not exist."
+msgstr "ID为%s的设备不存在。"
+
+msgid "%s has bound to group %s."
+msgstr "%s已经绑定给设备组%s。"
+
+msgid "There are no vm that can be bound."
+msgstr "没有可绑定的设备。"
+
+msgid "The cdn type %s has no associate role."
+msgstr "CDN加速类型%s没有关联的角色。"
+
+msgid "The cdn pool associated with the cdn vm group is in service."
+msgstr "设备组关联的资源池处于服务中。"
+
+msgid "The cdn vm is in init state."
+msgstr "CDN设备处于待初始化中。"
+
+msgid "%s does not bind log down server."
+msgstr "%s未绑定日志下载服务器。"
+
+msgid "The log center resource has bind cdn group."
+msgstr "日志中心绑定了设备组。"
+
+msgid "The log down resource has bind cdn group."
+msgstr "日志下载绑定了设备组。"
+
+msgid "The refresh resource has bind cdn group."
+msgstr "刷新资源绑定了设备组。"
+
+msgid "There are not bound any domain."
+msgstr "没有绑定任何频道。"
+
+msgid "You must provide at least one type configuration."
+msgstr "至少要下发一种类型的配置。"
+
+msgid "The cdn vm group %s has been bound to this resource."
+msgstr "设备组%s已经绑定过该资源了。"
+
+msgid "The cdn vm group %s has not bound to this resource."
+msgstr "设备组%s未绑定过该资源。"
+
+msgid "The logcenter has not opened."
+msgstr "该日志中心状态未启用。"
+
+msgid "The logcenter has not bound any user."
+msgstr "请先给日志中心绑定用户。"
+
+msgid "The logcenter has not bound any group."
+msgstr "请先给日志中心绑定设备组。"
+
+msgid "The domain %s has been bound to this logcenter."
+msgstr "频道%s已经绑定了该日志中心。"
+
+msgid "The domain %s has not bound to this logcenter."
+msgstr "频道%s未绑定该日志中心。"
+
+msgid "Please set the quota first."
+msgstr "请先给该用户设置刷新额度。"
+
+msgid "Exceeded maximum amount of %s url quota."
+msgstr "超出单次URL额度，目前最大可提交%s个。"
+
+msgid "Exceeded maximum amount of %s day quota."
+msgstr "超出单日额度限制，目前单日可提交%s条。"
+
+msgid "Too frequently, please try again after %s s."
+msgstr "提交频率太频繁，请%s秒后再试。"
+
+msgid "The purge url is empty."
+msgstr "刷新URL为空。"
+
+msgid "The prefetch url is empty."
+msgstr "预取URL为空。"
+
+msgid "Invalid url %s."
+msgstr "URL %s 不合法。"
+
+msgid "Failed to parse url %s path."
+msgstr "解析URL %s 失败。"
+
+msgid "The url %s path must begin or end with /"
+msgstr "目录URL %s 必须以/号开头结尾。"
+
+msgid "Failed to parse url %s host."
+msgstr "解析URL %s HOST失败。"
+
+msgid "The purge url less than 1."
+msgstr "刷新URL个数少于1。"
+
+msgid "The purge domain %s is not exist."
+msgstr "刷新域名%s未找到。"
+
+msgid "The prefetch url less than 1."
+msgstr "预取URL个数少于1。"
+
+msgid "The prefetch domain %s is not exist."
+msgstr "预取域名%s未找到。"
+
+msgid "You can submit up to five different domains at a time."
+msgstr "每次最多可提交5个不同域名的URL。"
+
+msgid "The domain is not in the same group."
+msgstr "请提交同一设备组的域名。"
+
+msgid "The domain is not in the same fake group."
+msgstr "请提交同一伪源设备组的域名。"
+
+msgid "There are no channels available."
+msgstr "没有可用的渠道。"
+
+msgid "There are no dns record."
+msgstr "没有dns解析记录。"
+
+msgid "The channel %s is not implement."
+msgstr "渠道%s接口还未实现。"
+
+msgid "Only self-owned CDN operations are allowed."
+msgstr "仅允许自建CDN操作。"
+
+msgid "Only the dir type are allowed."
+msgstr "仅允许目录执行此操作。"
+
+msgid "The domain has not setting custom conf."
+msgstr "该频道还未开启过自定义配置，请先开启后再操作。"
+
+msgid "Missing refresh device."
+msgstr "缺少刷新设备。"
+
+msgid "Only one user's refresh request can be submitted at a time."
+msgstr "每次只能提交一个用户的刷新请求。"
+
+msgid "Only one user's prefetch request can be submitted at a time."
+msgstr "每次只能提交一个用户的预取请求。"
+
+msgid "The purge id %s is not exist."
+msgstr "刷新ID不存在。"
+
+msgid "The prefetch id %s is not exist."
+msgstr "预取ID不存在。"
+
+msgid "Lower flow must be smaller than upper flow."
+msgstr "起始流量必须小于结束流量。"
+
+msgid "Flow resource has been existed."
+msgstr "流量套餐已经存在。"
+
+msgid "The cdn flow resource is not exist."
+msgstr "流量套餐记录不存在。"
+
+msgid "Bandwidth resource has been existed."
+msgstr "带宽日峰值计费价格已经存在。"
+
+msgid "The bandwidth resource is not exist."
+msgstr "带宽日峰值计费价格不存在。"
+
+msgid "The purchased flow value is outside the package range."
+msgstr "购买的流量值超出了套餐范围。"
+
+msgid "The user id of %s conf is not exist."
+msgstr "ID为%s的用户没有CDN配置。"
+
+msgid "Self channel must choose cdn pool."
+msgstr "自建渠道必须选择资源池。"
+
+msgid "Non-self channel does not need to choose cdn pool."
+msgstr "非自建渠道不需要选择资源池。"
+
+msgid "%s has been verified."
+msgstr "%s已审核。"
+
+msgid "The dns name %s is not exist."
+msgstr "DNS服务域%s不存在。"
+
+msgid "The dns name %s is not running."
+msgstr "DNS服务域未开启。"
+
+msgid "The cdn pool is not exist."
+msgstr "资源池不存在。"
+
+msgid "The cdn pool is not opened."
+msgstr "资源池未开启。"
+
+msgid "The default cdn pool of %s has been existed."
+msgstr "%s 类型的默认资源池已经存在。"
+
+msgid "Please close dns resolve first."
+msgstr "请先关闭DNS解析。"
+
+msgid "Please close monitor first."
+msgstr "请先关闭DNS监控。"
+
+msgid "The cdn pool has associated cdn domain, and is in service."
+msgstr "资源池有关联的加速频道，处于服务中。"
+
+msgid "The cdn pool: %s has been existed."
+msgstr "CDN资源池：%s已经存在。"
+
+msgid "The cdn pool's dns resolve has been closed."
+msgstr "CDN资源池的解析已经关闭。"
+
+msgid "The cdn pool's dns resolve has been opened."
+msgstr "CDN资源池的解析已经开启。"
+
+msgid "The cdn pool's dns monitor has been closed."
+msgstr "CDN资源池的监控已经关闭。"
+
+msgid "The cdn pool's dns monitor has been opened."
+msgstr "CDN资源池的监控已经开启。"
+
+msgid "The cdn pool's cdn group has no service ip."
+msgstr "CDN资源池的设备组没有服务IP。"
+
+msgid "The group has no vm resources."
+msgstr "可能是资源池关联的设备组没有绑定任何设备。"
+
+msgid "The cdn group strategy id %s is not exist."
+msgstr "策略ID%s不存在。"
+
+msgid "The same line and IP strategy has been existed."
+msgstr "已存在相同线路和IP的解析策略。"
+
+msgid "Invalid cdn pool state."
+msgstr "错误的资源池状态。"
+
+msgid "The cdn pool has been opened."
+msgstr "CDN资源池已经开启。"
+
+msgid "The cdn pool has been closed."
+msgstr "CDN资源池已经关闭。"
+
+msgid "The dns strategy of %s has been exist."
+msgstr "%s的解析策略已经存在。"
+
+msgid "Invalid type for add cdn pool strategy."
+msgstr "错误的CDN资源池解析策略操作类型。"
+
+msgid "Please add dns temp record."
+msgstr "请添加DNS解析策略记录。"
+
+msgid "%s does not open custom conf."
+msgstr "%s未开启自定义配置。"
+
+msgid "Invalid custom conf type."
+msgstr "错误的自定义配置类型。"
+
+msgid "Cdn script %s has bind to cdn domain."
+msgstr "CDN脚本 %s 已经绑定加速频道。"
+
+msgid "Cdn script %s has bind to cdn vm."
+msgstr "CDN脚本 %s 已经绑定CDN设备。"
+
+msgid "The cdn script has been opened."
+msgstr "CDN脚本已开启。"
+
+msgid "The cdn script has been closed."
+msgstr "CDN脚本已关闭。"
+
+msgid "The rule script is not exist."
+msgstr "Rule脚本不存在。"
+
+msgid "The cdn rule script %s has been opened."
+msgstr "Rule脚本 %s已经开启。"
+
+msgid "The cdn rule script %s has been closed."
+msgstr "Rule脚本 %s已经关闭。"
+
+msgid "Cdn rule %s has bind to cdn domain."
+msgstr "Rule脚本 %s已经绑定加速频道。"
+
+msgid "No permission to bind the rule script."
+msgstr "无权限绑定这个Rule脚本。"
+
+msgid "The rule script name is over max length 32."
+msgstr "Rule脚本名称不能超过32个字符。"
+
+msgid "The rule script machine_id is over max length 16."
+msgstr "Rule脚本的机读名称不能超过16个字符。"
+
+msgid "The rule script note is over max length 255."
+msgstr "Rule脚本的备注不能超过255个字符。"
+
+msgid "The cdn rule %s has been existed."
+msgstr "Rule脚本 %s已存在。"
+
+msgid "The cdn rule name can not be empty."
+msgstr "Rule脚本名称不能为空。"
+
+msgid "The cdn rule content can not be empty."
+msgstr "Rule脚本内容不能为空。"
+
+msgid "Only the cdn script whose type is vm can bind cdn vm."
+msgstr "仅类型是设备的CDN脚本才能绑定CDN设备。"
+
+msgid "Only the cdn script whose type is channel can bind cdn domain."
+msgstr "仅类型是频道的CDN脚本才可以绑定CDN加速频道。"
+
+msgid "The cdn script is not opened."
+msgstr "脚本未开启。"
+
+msgid "%s has bind cdn script %s."
+msgstr "%s已绑定脚本 %s。"
+
+msgid "%s has bind cdn script."
+msgstr "%s已绑定过脚本。"
+
+msgid "%s has not bind to cdn script %s."
+msgstr "%s未绑定脚本 %s。"
+
+msgid "Invalid cdn rule script state."
+msgstr "错误的rule脚本状态。"
+
+msgid "Invalid cdn script state."
+msgstr "错误的cdn脚本状态。"
+
+msgid "%s has not bind to cdn rule script %s."
+msgstr "%s未绑定rule脚本 %s。"
+
+msgid "The remap custom conf of %s has been opened."
+msgstr "%s的自定义remap配置已经开启。"
+
+msgid "The remap custom conf of %s has been closed."
+msgstr "%s的自定义remap配置已经关闭。"
+
+msgid "The cache custom conf of %s has been opened."
+msgstr "%s的自定义cache配置已经开启。"
+
+msgid "The cache custom conf of %s has been closed."
+msgstr "%s的自定义cache配置已经关闭。"
+
+msgid "The vhost custom conf of %s has been opened."
+msgstr "%s的自定义vhost配置已经开启。"
+
+msgid "The vhost custom conf of %s has been closed."
+msgstr "%s的自定义vhost配置已经关闭。"
+
+msgid "Only cdn domain that has self channel can clear cache."
+msgstr "只有绑定了自建渠道的加速频道才可以一键清除缓存。"
+
+msgid "Only cdn domain that has self channel can migrate."
+msgstr "只有绑定了自建渠道的加速频道才可以进行迁移操作。"
+
+msgid "The dns service domain %s is not found."
+msgstr "DNS服务域名 %s未找到。"
+
+msgid "The dispatch template is not exist."
+msgstr "调度模版不存在。"
+
+msgid "The dispatch template record has been existed."
+msgstr "调度模板记录已存在。"
+
+msgid "The dispatch template record is not exist."
+msgstr "调度模版记录不存在。"
+
+msgid "The dispatch template record has been closed."
+msgstr "调度模版记录已关闭。"
+
+msgid "The dispatch template record has been opened."
+msgstr "调度模版记录已开启。"
+
+msgid "There are related cdn domain, please keep at least one template record that is opened."
+msgstr "存在关联的加速频道，请至少保留一条开启的调度模版记录。"
+
+msgid "The dispatch template is not exist with id: %s."
+msgstr "ID为%s的调度模板不存在。"
+
+msgid "The dispatch template is not opened."
+msgstr "调度模板未开启。"
+
+msgid "The dispatch template has been existed."
+msgstr "调度模板记录已存在。"
+
+msgid "The dispatch template has bind to cdn domain."
+msgstr "调度模版已经绑定加速频道。"
+
+msgid "The dispatch template name is over max length 255."
+msgstr "调度模版名称不能超过255个字符。"
+
+msgid "The dispatch template %s has related cdn domain, it can not be closed."
+msgstr "调度模版%s 有服务的加速频道，不能关闭。"
+
+msgid "The dispatch template %s has been closed."
+msgstr "调度模版%s 已关闭。"
+
+msgid "The dispatch template %s has been opened."
+msgstr "调度模版%s 已开启。"
+
+msgid "Target cdn pool is same as current cdn pool."
+msgstr "当前资源池和目标资源池相同。"
+
+msgid "%s has bind cdn pool %s."
+msgstr "%s已绑定资源池%s。"
+
+msgid "%s has not bind cdn pool %s."
+msgstr "%s未绑定资源池%s。"
+
+msgid "The cdn domain %s miss dns service domain."
+msgstr "CDN加速频道 %s丢失DNS服务域名。"
+
+msgid "%s's dispatch strategy %s has been existed."
+msgstr "%s的调度策略 %s已经存在。"
+
+msgid "%s's dispatch strategy %s has been opened."
+msgstr "%s的调度策略 %s已经开启。"
+
+msgid "%s's dispatch strategy %s has been closed."
+msgstr "%s的调度策略 %s已经关闭。"
+
+msgid "The cdn domain channel sty max priority is %s."
+msgstr "CDN频道的渠道策略最大优先级是%s。"
+
+msgid "%s has not bind to channel %s."
+msgstr "%s未绑定渠道 %s。"
+
+msgid "Channel %s has no dispatch domain."
+msgstr "渠道 %s没有调度域名。"
+
+msgid "%s has no domain id of %s."
+msgstr "%s没有%s的频道ID。"
+
+msgid "The dispatch sty is not exist."
+msgstr "调度策略不存在。"
+
+msgid "The cdn domain %s has no service domain."
+msgstr "加速频道 %s没有服务域。"
+
+msgid "The channel sty %s does not find its related dns record."
+msgstr "渠道的调度策略 %s未找到对应的DNS记录。"
+
+msgid "Invalid dispatch strategy state."
+msgstr "错误的调度策略状态。"
+
+msgid "You must keep at least one dispatch strategy that is opened."
+msgstr "必须至少保留一条开启的调度策略。"
+
+msgid "Default cdn pool of %s is missing."
+msgstr "%s 类型的默认资源池未找到。"
+
+msgid "The SSL cert is not exist."
+msgstr "SSl证书不存在。"
+
+msgid "The ssl cert %s has already exist."
+msgstr "证书 %s已经存在。"
+
+msgid "The ssl cert has already exist."
+msgstr "证书已经存在。"
+
+msgid "The ssl cert has been expired."
+msgstr "证书已过期了。"
+
+msgid "The ssl cert has bind to cdn domain."
+msgstr "证书绑定了加速频道。"
+
+msgid "The cdn group %s has bind log down resource."
+msgstr "设备组 %s已经绑定日志下载。"
+
+msgid "The cdn vm group %s has bind cdn resource."
+msgstr "CDN设备组 %s已绑定资源。"
+
+msgid "%s has not bind to ssl cert %s."
+msgstr "%s未绑定证书 %s。"
+
+msgid "The cdn script name can not be empty."
+msgstr "脚本名称不能为空。"
+
+msgid "The cdn script name is over max length 16."
+msgstr "脚本名称不能超过16个字符。"
+
+msgid "The cdn script %s has been existed."
+msgstr "脚本 %s已经存在。"
+
+msgid "The cdn script content can not be empty."
+msgstr "脚本内容不能为空。"
+
+msgid "The cdn group %s has not bind dns group."
+msgstr "设备组 %s未绑定解析组。"
+
+msgid "Please keep the start and end parameters of two streaming types consistent."
+msgstr "请保持两种类型的start和end参数值一致。"
+
+msgid "Deny_region and allow_region only one can be passed."
+msgstr "deny_region和allow_region只能同时传一个。"
+
+msgid "Deny_country and allow_country only one can be passed."
+msgstr "deny_country和allow_country只能同时传一个。"
+
+msgid "Please submit cdn domain that has some cdn pool."
+msgstr "请提交拥有相同资源池的加速域名。"
+
+msgid "Only cdn domain that has self channel can set cache key."
+msgstr "只有自建渠道的加速域名才能设置cache key."
+
+msgid "Only the cdn domain that is verified, stopped, closed or refused can be deleted."
+msgstr "只有待审核、暂停、关闭或者拒绝的加速频道才可以删除。"
+
+msgid "The cdn vm ip for push conf can not be empty."
+msgstr "下发配置的设备IP不能为空。"
+
+msgid "%s has been used for source origin."
+msgstr "%s 已被用于源站。"
+
+msgid "%s has been used for backup origin."
+msgstr "%s已被用于备份源站。"
+
+msgid "Allow region and deny region can not be set to the same."
+msgstr "允许大区和限制大区不能设置成一样。"
+
+msgid "Allow country and deny country can not be set to the same."
+msgstr "允许国家和限制国家不能设置成一样。"
+
+msgid "The cdn domain cannot have space characters."
+msgstr "加速域名不能有空格字符。"
+
+msgid "Please do not contain ~ in %s."
+msgstr "请不要在 %s中包含~。"
+
+msgid "The cdn type of the target cdn pool must be same as the cdn domain."
+msgstr "目标资源池的加速类型必须与加速域名保持一致。"
+
+msgid "The service domain of the target cdn pool must be same as the current cdn pool."
+msgstr "目标资源池的服务域名必须与当前资源池保持一致。"
+
+msgid "Please do not set same backup source."
+msgstr "请不要设置重复的备份源站。"
+
+msgid "Please close cdn dispatch template first."
+msgstr "请先关闭调度模版。"
+
+msgid "Please close cdn dispatch template record first."
+msgstr "请先关闭调度模版记录。"
+
+msgid "Slice chunk size cannot exceed the maximum value %s."
+msgstr "分片大小不能超过最大值 %s。"
+
+msgid "Single connection speed limit cannot exceed the maximum value %s."
+msgstr "单连接限速不能超过最大值 %s。"
+
+msgid "Single connection limit file size cannot exceed the maximum value %s."
+msgstr "单连接限制文件大小不能超过最大值 %s。"
+
+msgid "File size that can be transferred before the single connection speed limit starts cannot exceed the maximum value %s."
+msgstr "单连接限速开始前可以传输的文件大小不能超过最大值 %s。"
+
+msgid "Connection limit cannot exceed the maximum value %s."
+msgstr "连接数限制不能超过最大值 %s。"
+
+msgid "Request limit cannot exceed the maximum value %s."
+msgstr "请求数限制不能超过最大值 %s。"
+
+msgid "Single IP request count interval cannot exceed the maximum value %s."
+msgstr "单IP请求数统计间隔不能超过最大值 %s。"
+
+msgid "Time of denial of service cannot exceed the maximum value %s."
+msgstr "拒绝服务时长不能超过最大值 %s。"
+
+msgid "Qps threshold cannot exceed the maximum value %s."
+msgstr "qps阀值不能超过最大值 %s。"
+
+msgid "%s has no channel domain id."
+msgstr "%s没有对应的渠道商频道ID。"
+
+msgid "Content purge failed."
+msgstr "内容刷新失败。"
+
+msgid "Content prefetch failed."
+msgstr "内容预取失败。"
+
+msgid "%s share the cache of %s, it is not allowed to modify the shared cache."
+msgstr "%s 共享了 %s 的缓存，不允许修改共享缓存。"
+
+msgid "%s does not dispatch to %s."
+msgstr "%s 未调度到 %s。"
+
+msgid "There is no channel that need sync configuration."
+msgstr "没有需要同步配置的渠道。"
+
+msgid "The cname record serving %s does not exist."
+msgstr "服务于 %s的cname记录不存在。"
+
+# DNS
+msgid "Error, the dns domain %s can not find its master ip."
+msgstr "错误，DNS域名 %s未找到其master的IP地址。"
+
+msgid "The domain name is not registered."
+msgstr "未注册的域名。"
+
+msgid "The dns domain %s is not exist."
+msgstr "未注册的域名%s。"
+
+msgid "The dns domain is not opened."
+msgstr "DNS域名未开启。"
+
+msgid "The dns domain %s is not opened."
+msgstr "DNS域名 %s未开启。"
+
+msgid "Please pause the dns domain %s first."
+msgstr "请先暂停DNS域名 %s。"
+
+msgid "Please pause the dns record first."
+msgstr "请先暂停DNS记录。"
+
+msgid "DNS record data is empty."
+msgstr "DNS记录数据为空。"
+
+msgid "Invalid dns record id."
+msgstr "错误的DNS记录ID。"
+
+msgid "The dns record is not opened."
+msgstr "DNS记录未开启。"
+
+msgid "Invalid dns record state."
+msgstr "错误的DNS记录状态。"
+
+msgid "The dns record has been running."
+msgstr "DNS记录已开启。"
+
+msgid "The dns record has been paused."
+msgstr "DNS记录已暂停。"
+
+msgid "The NS record is not allowed to modify."
+msgstr "NS记录不允许修改。"
+
+msgid "There must be at least one A record for multi cname."
+msgstr "多CNAME需要至少一个A记录。"
+
+msgid "There must be at least one CNAME record for multi cname."
+msgstr "多CNAME需要至少一个CNAME记录。"
+
+msgid "Multi CNAME record is not allowed to update hostname."
+msgstr "多CNAME不允许更新hostname。"
+
+msgid "There must be at least one A record that is opened for multi cname."
+msgstr "多CNAME需要至少一个开启的A记录。"
+
+msgid "There must be at least one CNAME record that is opened for multi cname."
+msgstr "多CNAME需要至少一个开启的CNAME记录。"
+
+msgid "Fail to update dns record state."
+msgstr "更新DNS记录状态失败。"
+
+msgid "The dns record value can not be empty."
+msgstr "DNS记录值不能为空。"
+
+msgid "The dns record is not exist."
+msgstr "DNS记录不存在。"
+
+msgid "Can not delete the ns record."
+msgstr "不能删除NS记录。"
+
+msgid "Please delete multi cname first."
+msgstr "请先删除多CNAME。"
+
+msgid "The dns domain is not found."
+msgstr "DNS域名未找到。"
+
+msgid "The dns domain is not exist."
+msgstr "DNS域名不存在。"
+
+msgid "The dns domain %s is not exist."
+msgstr "DNS域名 %s不存在。"
+
+msgid "The dns domain %s fail to add record."
+msgstr "DNS域名%s添加记录失败。"
+
+msgid "The dns domain %s fail to delete record."
+msgstr "DNS域名%s删除记录失败。"
+
+msgid "%s has no A record or CNAME record, no need to init."
+msgstr "%s没有A记录、CNAME，无需初始化。"
+
+msgid "The dns domain's dns group is not exist."
+msgstr "DNS域名的解析组不存在。"
+
+msgid "The dns domain's dns group is not opened."
+msgstr "DNS域名的解析组未开启。"
+
+msgid "The dns master is not exist."
+msgstr "DNS Master不存在。"
+
+msgid "The dns master is not opened."
+msgstr "DNS Master未开启。"
+
+msgid "The dns master %s has been existed."
+msgstr "DNS Master %s已存在。"
+
+msgid "Master remotes.conf file, %s."
+msgstr "Master的remotes.conf配置文件，%s."
+
+msgid "The dns master ip %s has been existed."
+msgstr "DNS Master的IP %s已经存在。"
+
+msgid "The dns master has bind dns group."
+msgstr "此dns master已经绑定dns解析组。"
+
+msgid "The dns master %s has no ip."
+msgstr "Dns Master %s 没有服务IP。"
+
+msgid "Invalid dns master state."
+msgstr "错误的dns master状态。"
+
+msgid "The dns master has been opened."
+msgstr "DNS Master已开启。"
+
+msgid "The dns master has been closed."
+msgstr "DNS Master已关闭。"
+
+msgid "The dns slave is not exist."
+msgstr "DNS Slave不存在。"
+
+msgid "The dns slave %s has been existed."
+msgstr "Dns slave %s 已经存在。"
+
+msgid "The dns slave ip %s has been existed."
+msgstr "Dns slave的IP %s已存在。"
+
+msgid "Error, the dns slave %s can not find its master ip."
+msgstr "错误，Dns slave %s找不到它关联的master ip."
+
+msgid "%s has been existed."
+msgstr "%s已存在。"
+
+msgid "Invalid action for handle auth domain."
+msgstr "授权域操作类型错误。"
+
+msgid "%s sync A record failed, %s."
+msgstr "%s同步A记录失败，%s。"
+
+msgid "%s delete A record failed, %s."
+msgstr "%s删除A记录失败，%s。"
+
+msgid "Invalid dns slave state."
+msgstr "错误的dns slave状态。"
+
+msgid "The dns slave has been opened."
+msgstr "DNS Slave已开启。"
+
+msgid "The dns slave has been closed."
+msgstr "DNS Slave已关闭。"
+
+msgid "The dns group %s can not find its master ip."
+msgstr "DNS解析组 %s未找到master IP地址。"
+
+msgid "The dns domain blacklist record is not exist."
+msgstr "DNS域名黑名单记录不存在。"
+
+msgid "%s has no multicname."
+msgstr "%s没有多CNAME。"
+
+msgid "%s is protected."
+msgstr "%s受保护。"
+
+msgid "Invalid dns domain type."
+msgstr "错误的DNS域名类型。"
+
+msgid "The auth domain is not exist."
+msgstr "授权域不存在。"
+
+msgid "%s is not a auth domain."
+msgstr "%s不是个授权域。"
+
+msgid "The dns group is not exist."
+msgstr "DNS解析组不存在。"
+
+msgid "The dns group %s is closed."
+msgstr "DNS解析组 %s已关闭。"
+
+msgid "The dns group has no slaves."
+msgstr "DNS解析组没有slave。"
+
+msgid "Dns group %s has no related dns domain."
+msgstr "DNS解析组 %s没有关联的域名。"
+
+msgid "Please open the dns group first."
+msgstr "请先开启DNS解析组。"
+
+msgid "Please open the dns master."
+msgstr "请先开启DNS Master。"
+
+msgid "Dns Master %s has no related dns group."
+msgstr "DNS Master %s没有关联的dns解析组。"
+
+msgid "Dns Master %s has no related dns domain."
+msgstr "DNS Master %s没有关联的dns域名。"
+
+msgid "Dns domain that is related to master %s has no running record."
+msgstr "Master %s 关联的域名没有运行的记录。"
+
+msgid "The auth domain %s is in service."
+msgstr "授权域%s服务中。"
+
+msgid "The service domain %s has bind to cdn pool."
+msgstr "服务域%s已绑定资源池。"
+
+msgid "DNS sync strategy failed, %s."
+msgstr "DNS同步解析策略失败, %s。"
+
+msgid "DNS delete the zone file failed, %s."
+msgstr "DNS删除zone文件失败, %s。"
+
+msgid "DNS fail to create the zone file, %s."
+msgstr "DNS创建zone文件失败, %s。"
+
+msgid "Invalid dns domain state."
+msgstr "错误的DNS域名状态。"
+
+msgid "%s has been opened."
+msgstr "%s已开启。"
+
+msgid "%s has been paused."
+msgstr "%s已暂停。"
+
+msgid "The script is not exist."
+msgstr "脚本不存在。"
+
+msgid "The script name %s has been existed."
+msgstr "脚本%s已存在。"
+
+msgid "Missing dns record params."
+msgstr "缺少DNS记录参数。"
+
+msgid "Subdomain series exceeding limit."
+msgstr "子域名级数超出限制。"
+
+msgid "Subdomain may contain illegal characters, %s."
+msgstr "子域名包含非法字符, %s。"
+
+msgid "Invalid or no records supplied."
+msgstr "参数records为空。"
+
+msgid "TTL must be a number."
+msgstr "TTL必须是一个数字。"
+
+msgid "TTL Range: 1-604,800. Minimum TTL is different for domain names of different grades (default is 120)."
+msgstr "TTL取值范围1-604800，默认为120。"
+
+msgid "Invalid type given. Value can be A, AAAA, CNAME, NS, TXT, URL, SRV or MX. Value given: %s."
+msgstr "只允许添加类型为A, AAAA, CNAME, NS, TXT, URL, SRV, MX的记录。"
+
+msgid "The dns record has been existed."
+msgstr "DNS记录已经存在。"
+
+msgid "The ttl value of a same subdomain must be same."
+msgstr "同一个子域名的ttl必须相同。"
+
+msgid "Record conflict, the CNAME record has been existed."
+msgstr "记录冲突，CNAME记录已经存在。"
+
+msgid "Record conflict, the NS record has been existed."
+msgstr "记录冲突，NS记录已经存在。"
+
+msgid "Record conflict, the MX record has been existed."
+msgstr "记录冲突，mx记录已经存在。"
+
+msgid "Record conflict, the A record has been existed."
+msgstr "记录冲突，A记录已经存在。"
+
+msgid "Record conflict, the AAAA record has been existed."
+msgstr "记录冲突，AAAA记录已经存在。"
+
+msgid "Record conflict, the TXT record has been existed."
+msgstr "记录冲突，TXT记录已经存在。"
+
+msgid "Record conflict, the URL record has been existed or conflict with A, AAAA, MX, CNAME record."
+msgstr "记录冲突，URL已经存在。"
+
+msgid "Invalid mx value, it must be a valid domain or ip address."
+msgstr "错误的mx值，必须是一个合法的域名或者IP地址。"
+
+msgid "%s is not a valid domain."
+msgstr "%s不是一个合法的域名。"
+
+msgid "CNAME is not allowed in the root domain."
+msgstr "根域禁止添加cname记录。"
+
+msgid "Error txt record value."
+msgstr "错误的TXT记录值。"
+
+msgid "%s is not a valid ipv6 address."
+msgstr "%s不是一个合法的ipv6地址。"
+
+msgid "Invalid URL."
+msgstr "不合法的URL。"
+
+msgid "Fail to delete the records."
+msgstr "删除记录失败。"
+
+msgid "%s is not a dns service domain or a dns auth domain."
+msgstr "%s既不是服务域也不是授权域。"
+
+msgid "%s is not a dns service domain."
+msgstr "%s不是一个服务域。"
+
+msgid "Invalid action type, only add or delete."
+msgstr "非法的操作类型，只能是add或者delete。"
+
+msgid "DNS record update failed."
+msgstr "DNS记录更新失败。"
+
+msgid "The dns monitor of %s is not exist."
+msgstr "%s的DNS监控不存在。"
+
+msgid "The dns monitor record %s is not exist."
+msgstr "DNS监控记录 %s不存在。"
+
+msgid "The dns monitor record %s is paused."
+msgstr "DNS监控记录 %s暂停中。"
+
+msgid "The dns monitor record %s has been down."
+msgstr "DNS监控记录 %s已设置为宕机。"
+
+msgid "The dns monitor record %s has been recovered, it is opened now."
+msgstr "DNS监控记录 %s已恢复。"
+
+msgid "Invalid dns domain monitor id."
+msgstr "错误的DNS监控ID。"
+
+msgid "The dns subdomain %s has no monitor data."
+msgstr "DNS子域名 %s没有监控数据。"
+
+msgid "Invalid dns domain monitor record state."
+msgstr "错误的DNS监控记录状态。"
+
+msgid "The dns domain monitor record has been opened."
+msgstr "DNS监控记录已开启。"
+
+msgid "The dns domain monitor record has been paused."
+msgstr "DNS监控记录已暂停。"
+
+msgid "Invalid param dns domain id."
+msgstr "错误的DNS域名ID。"
+
+msgid "The dns domain %s is not opened."
+msgstr "DNS域名 %s未开启。"
+
+msgid "The dns domain monitor of %s has been existed."
+msgstr "%s的监控已经存在。"
+
+msgid "%s has no A record."
+msgstr "%s没有A记录。"
+
+msgid "The cdn pool: %s has no A record."
+msgstr "资源池: %s没有A记录。"
+
+msgid "The contact user info is not exist."
+msgstr "联系人信息不存在。"
+
+msgid "Invalid contact user info."
+msgstr "错误的联系人信息。"
+
+msgid "The dns domain monitor is not exist."
+msgstr "DNS监控不存在。"
+
+msgid "The dns domain monitor is not opened."
+msgstr "DNS监控未开启。"
+
+msgid "Invalid dns domain monitor state."
+msgstr "错误的DNS监控状态。"
+
+msgid "The dns domain monitor has been opened."
+msgstr "DNS监控已开启。"
+
+msgid "The dns domain monitor has been paused."
+msgstr "DNS监控已暂停。"
+
+msgid "The dns group's monitor group has been existed."
+msgstr "DNS解析组的监控组已经存在。"
+
+msgid "The dns group(%s)'s  monitor group has been existed."
+msgstr "DNS解析组的监控组已经存在。"
+
+msgid "Invalid dns monitor group state."
+msgstr "错误的DNS监控组状态。"
+
+msgid "The dns monitor group is not exist."
+msgstr "DNS监控组不存在。"
+
+msgid "The dns monitor group %s has bind monitor server."
+msgstr "DNS监控组 %s已经绑定了监控设备。"
+
+msgid "The dns monitor server %s has been existed."
+msgstr "DNS监控设备 %s已经存在。"
+
+msgid "Invalid dns monitor server state."
+msgstr "错误的DNS监控设备状态。"
+
+msgid "The dns monitor server is not exist."
+msgstr "DNS监控设备不存在。"
+
+msgid "%s has no monitor data."
+msgstr "%s没有监控数据。"
+
+msgid "Fail to update dns monitor."
+msgstr "更新DNS监控失败。"
+
+msgid "There is no monitor record."
+msgstr "没有监控记录。"
+
+msgid "The dns monitor of %s is not opened."
+msgstr "%s的监控未开启。"
+
+msgid "Invalid monitor action, only: add, update and del."
+msgstr "错误的监控操作，只能是add, update, del。"
+
+msgid "The dns domain has no monitor server."
+msgstr "DNS域名没有监控服务器。"
+
+msgid "%s missing param ip."
+msgstr "%s缺少参数IP。"
+
+msgid "The dns group %s has been existed."
+msgstr "DNS解析组 %s已经存在。"
+
+msgid "Invalid dns group state."
+msgstr "错误的DNS解析组状态。"
+
+msgid "The dns group has bind slaves."
+msgstr "解析组绑定了Slave。"
+
+msgid "The dns group has resolved domain."
+msgstr "解析组处于服务中。"
+
+msgid "Sync user.db failed, %s."
+msgstr "同步user.db失败，%s。"
+
+msgid "The begin ip %s has been existed."
+msgstr "起始IP地址 %s已经存在。"
+
+msgid "The end ip %s has been existed."
+msgstr "结束IP地址 %s已经存在。"
+
+msgid "The begin ip is bigger than the end ip."
+msgstr "起始IP大于结束IP。"
+
+msgid "Ip's interval is too large."
+msgstr "IP的间隔太大."
+
+msgid "The dns user db is not exist."
+msgstr "DNS用户数据库不存在。"
+
+msgid "Invalid dns userdb state."
+msgstr "错误的DNS用户数据库状态。"
+
+msgid "The dns userdb has been paused."
+msgstr "DNS用户数据库已暂停。"
+
+msgid "The dns userdb has been opened."
+msgstr "DNS用户数据库已开启。"
+
+msgid "Error dns remote name."
+msgstr "错误的dns remote名称。"
+
+msgid "Invalid dns user db opt."
+msgstr "错误的dns用户数据库操作。"
+
+msgid "The dns strategy has been existed."
+msgstr "DNS解析策略已经存在。"
+
+msgid "The subdomain %s of %s is not exist."
+msgstr "%s的子域名 %s不存在。"
+
+msgid "Invalid dns strategy type."
+msgstr "错误的解析策略类型。"
+
+msgid "Invalid dns strategy max ip value."
+msgstr "错误的DNS解析策略max_ip。"
+
+msgid "The dns strategy max ip number is %s."
+msgstr "DNS解析策略max_ip的最大值是：%s。"
+
+msgid "Please pause the dns strategy first."
+msgstr "请先暂停DNS解析策略。"
+
+msgid "The MaxIP must be greater than 1 or less than 16."
+msgstr "MaxIP必须大于1小于16。"
+
+msgid "The dns temp is not exist."
+msgstr "DNS策略模版不存在。"
+
+msgid "The dns temp %s has no strategy."
+msgstr "DNS策略模版 %s没有模版策略。"
+
+msgid "The dns strategy is not exist."
+msgstr "DNS解析策略不存在。"
+
+msgid "The dns subdomain %s is not exist."
+msgstr "DNS子域名%s不存在。"
+
+msgid "No temp record under the dns temp."
+msgstr "DNS模版下没有策略。"
+
+msgid "Invalid dns strategy state."
+msgstr "错误的DNS解析策略状态。"
+
+msgid "The dns strategy has been paused."
+msgstr "DNS解析策略已经暂停。"
+
+msgid "The dns strategy has been opened."
+msgstr "DNS解析策略已经开启。"
+
+msgid "Invalid dns temp record weight."
+msgstr "错误的模版策略权重。"
+
+msgid "The dns temp record has been existed."
+msgstr "DNS模版策略已经存在。"
+
+msgid "The dns temp record is not exist."
+msgstr "DNS模版策略不存在。"
+
+msgid "The max number of temp record is %s."
+msgstr "DNS模版的策略的最大数量是%s。"
+
+msgid "DNS add dns temp failed, %s."
+msgstr "DNS添加DNS策略模版失败，%s。"
+
+msgid "Please delete the temp record under the same dns temp."
+msgstr "请删除同一个模版下的策略。"
+
+msgid "Invalid dns temp record state."
+msgstr "错误的DNS模版策略状态。"
+
+msgid "The dns temp record has been paused."
+msgstr "模版策略已经暂停。"
+
+msgid "The dns temp record has been opened."
+msgstr "模版策略已经开启。"
+
+msgid "Please update the temp record under the same dns temp."
+msgstr "请更新同一个模版下的策略。"
+
+msgid "The dns temp %s has been existed."
+msgstr "DNS策略模版%s已经存在。"
+
+msgid "Invalid dns temp state."
+msgstr "错误的DNS策略模版状态。"
+
+msgid "The dns temp: %s has bind to a dns strategy."
+msgstr "策略模版: %s已经绑定到了一个解析策略上。"
+
+msgid "The dns temp has been paused."
+msgstr "策略模版已经暂停。"
+
+msgid "The dns temp has been opened."
+msgstr "策略模版已经开启。"
+
+msgid "No strategy bind to the dns temp."
+msgstr "此模版未绑定任何解析策略。"
+
+msgid "Error dns temp name."
+msgstr "错误的dns模版名称。"
+
+msgid "Error master ip."
+msgstr "错误的master IP。"
+
+msgid "Error dns temp id."
+msgstr "错误的DNS模版ID。"
+
+msgid "Dns Server Error."
+msgstr "DNS服务器异常。"
+
+msgid "%s has no running dns record."
+msgstr "%s 没有开启的记录。"
+
+msgid "Please close the dns group first."
+msgstr "请先关闭DNS解析组。"
+
+msgid "Please close the dns master first."
+msgstr "请先关闭DNS Master。"
+
+msgid "Please close the dns slave first."
+msgstr "请先关闭DNS Slave。"
+
+# CCRS
+msgid "The ccrs conf param is not exist."
+msgstr "配置参数不存在。"
+
+msgid "Invalid parameter content, the content is not yaml."
+msgstr "错误的配置内容，该内容不是yaml格式。"
+
+msgid "The conf name %s has been existed already."
+msgstr "该配置名称 %s 已经存在。"
+
+msgid "The target_path %s has been existed already."
+msgstr "该配置路径 %s 已经存在。"
+
+msgid "The ccrs conf is not exist."
+msgstr "配置不存在。"
+
+msgid "The conf has bound to vm, can not be deleted."
+msgstr "该配置已经绑定到设备，无法删除。"
+
+msgid "The device conf is not exist."
+msgstr "物理设备配置不存在。"
+
+msgid "The device param is not exist."
+msgstr "物理设备参数不存在。"
+
+msgid "The device is not exist."
+msgstr "物理设备不存在。"
+
+msgid "The uplink is duplicated."
+msgstr "上联端口重复。"
+
+msgid "The rack is closed, can not be added."
+msgstr "机柜未启用，无法添加。"
+
+msgid "The ccrs_netdevice is closed, can not be added."
+msgstr "网络设备未启用，无法添加。"
+
+msgid "The mac %s has been existed already."
+msgstr "该mac地址 %s 已经存在。"
+
+msgid "The vip %s has been existed already."
+msgstr "该服务IP地址 %s 已经存在。"
+
+msgid "The vip is duplicated."
+msgstr "服务IP地址重复。"
+
+msgid "The device asset_sn  %s has been existed already."
+msgstr "该资产编号 %s 已经存在。"
+
+msgid "The device sn  %s has been existed already."
+msgstr "该设备SN号 %s 已经存在。"
+
+msgid "The device name  %s has been existed already."
+msgstr "该设备名称 %s 已经存在。"
+
+msgid "The device code  %s has been existed already."
+msgstr "该设备编号 %s 已经存在。"
+
+msgid "The mport must larger than 0 and less than 65535."
+msgstr "管理端口必须在0-65535之间。"
+
+msgid "The mip and mport has been existed."
+msgstr "管理IP跟管理端口已经存在。"
+
+msgid "The ip is not exist."
+msgstr "IP不存在。"
+
+msgid "The rack is not exist."
+msgstr "机柜不存在。"
+
+msgid "The node is not exist."
+msgstr "节点不存在。"
+
+msgid "The isp is not exist."
+msgstr "ISP不存在。"
+
+msgid "The isp %s is not exist."
+msgstr "ISP %s不存在。"
+
+msgid "The isp mismatch the node."
+msgstr "输入的ISP跟节点中ISP不匹配。"
+
+msgid "The node is closed, can not be added."
+msgstr "节点未启用，无法添加。"
+
+msgid "The ip_begin %s has been existed already."
+msgstr "该IP开始地址 %s 已经存在。"
+
+msgid "The ip_end %s has been existed already."
+msgstr "该IP结束地址 %s 已经存在。"
+
+msgid "The ip_begin and ip_end must be the same in Single IP."
+msgstr "IP开始地址跟IP结束地址必须在同一个单网IP内。"
+
+msgid "The ip_begin must be smaller than ip_end."
+msgstr "IP开始地址必须小于IP结束地址。"
+
+msgid "The ip_begin must be smaller than ip_end at most 765."
+msgstr "IP开始地址最多比IP结束地址小765。"
+
+msgid "The bad_ip must between has been ip_begin and ip_end."
+msgstr "不可用IP必须在IP开始地址跟IP结束地址之间。"
+
+msgid "The %s %s has been existed already."
+msgstr "该%s %s 已经存在。"
+
+msgid "The area is not exist."
+msgstr "地区不存在。"
+
+msgid "Area contains the province, can not be deleted."
+msgstr "该地区下存在省份，无法删除。"
+
+msgid "The city is not exist."
+msgstr "城市不存在。"
+
+msgid "The continent is not exist."
+msgstr "大洲不存在。"
+
+msgid "Continent contains the country, can not be deleted."
+msgstr "该大洲下存在国家，无法删除。"
+
+msgid "The country is not exist."
+msgstr "国家不存在。"
+
+msgid "Country contains the isp, can not be deleted."
+msgstr "该国家下存在ISP，无法删除。"
+
+msgid "Country contains the region, can not be deleted."
+msgstr "该国家下存在大区，无法删除。"
+
+msgid "Country contains the area, can not be deleted."
+msgstr "该国家下存在地区，无法删除。"
+
+msgid "The province is not exist."
+msgstr "省份不存在。"
+
+msgid "Province contains the city, can not be deleted."
+msgstr "该省份下存在城市，无法删除。"
+
+msgid "The region is not exist."
+msgstr "大区不存在。"
+
+msgid "Region contains the province, can not be deleted."
+msgstr "该大区下存在省份，无法删除。"
+
+msgid "The netdevice param has been existed already."
+msgstr "该网络设备参数已经存在。"
+
+msgid "The netdevice is not exist."
+msgstr "网络设备不存在。"
+
+msgid "The rack is closed, can not be added."
+msgstr "该机柜未启用，无法添加"
+
+msgid "There is a device contains the netdevice, can not be deleted."
+msgstr "该网络设备已经被物理设备使用，无法删除。"
+
+msgid "The local_dns is repeated."
+msgstr "Local DNS有重复。"
+
+msgid "The local_dns has been existed."
+msgstr "Local DNS已存在。"
+
+msgid "The rack state is open, can not be closed."
+msgstr "机柜是启用状态，无法关闭节点。"
+
+msgid "The ip state is open, can not be closed."
+msgstr "IP是启用状态，无法关闭节点。"
+
+msgid "The node contains the rack, can not be deleted."
+msgstr "该节点已经被机柜占用，无法删除。"
+
+msgid "The node contains the ip, can not be deleted."
+msgstr "该节点已经被IP占用，无法删除。"
+
+msgid "The device state is open, can not be closed."
+msgstr "该机柜被占用的物理设备正在使用中，无法禁用。"
+
+msgid "The netdevice state is open, can not be closed."
+msgstr "该机柜被占用的网络设备正在使用中，无法禁用。"
+
+msgid "The node state is closed, can not be open."
+msgstr "该机柜被占用的节点正在使用中，无法禁用。"
+
+msgid "The rack contains the device, can not be updated."
+msgstr "该机柜被物理设备占用中，无法更新。"
+
+msgid "The rack contains the netdevice, can not be updated."
+msgstr "该机柜被网络设备占用中，无法更新。"
+
+msgid "The node state is closed, can not be updated."
+msgstr "该机柜被占用的节点已被禁用，无法更新。"
+
+msgid "The rack contains the device, can not be deleted."
+msgstr "该机柜已经被物理设备占用，无法删除。"
+
+msgid "The rack contains the netdevice, can not be deleted."
+msgstr "该节点已经被网络设备占用，无法删除。"
+
+msgid "The device %s has been added to the task."
+msgstr "设备 %s 正在下发中。"
+
+msgid "The task is not exist."
+msgstr "任务不存在。"
+
+msgid "The sub task is not exist."
+msgstr "子任务不存在。"
+
+msgid "Only CDN type sub-task can be reissued."
+msgstr "只有CDN类型的子任务才可以重新下发。"
+
+msgid "Only error, abnormal sub-task can be reissued."
+msgstr "只有错误、异常的任务可以重新下发"
+
+msgid "You refresh too frequent, please have a second."
+msgstr "请求太频繁，请稍后再试。"
+
+msgid "Parameter return can not be empty."
+msgstr "请求太频繁，请稍后再试。"
+
+msgid "The vm conf is not exist."
+msgstr "业务设备配置不存在。"
+
+msgid "The vm param is not exist."
+msgstr "业务设备参数不存在。"
+
+msgid "The vm is not exist."
+msgstr "业务设备不存在。"
+
+msgid "The vmid %s has been existed already."
+msgstr "该vmid %s 已经存在。"
+
+msgid "The vm name  %s has been existed already."
+msgstr "该设备名称 %s 已经存在。"
+
+msgid "The vm code  %s has been existed already."
+msgstr "该设备编号 %s 已经存在。"
+
+msgid "The vm has been used by cdn, can not be deleted."
+msgstr "该设备已经被cdn设备占用，无法删除。"
+
+msgid "The bmc has been existed already."
+msgstr "该远控卡已经存在。"
+
+msgid "The bmc is not exist."
+msgstr "远控卡不存在。"
+
+msgid "The cpu has been existed already."
+msgstr "该CPU已经存在。"
+
+msgid "The cpu is not exist."
+msgstr "CPU不存在。"
+
+msgid "The disk has been existed already."
+msgstr "该硬盘已经存在。"
+
+msgid "The disk is not exist."
+msgstr "硬盘不存在。"
+
+msgid "The disk snapshot is not exist or the state is error."
+msgstr "硬盘快照不存在或者不是正常状态。"
+
+msgid "The eth has been existed already."
+msgstr "该网卡已经存在。"
+
+msgid "The eth is not exist."
+msgstr "网卡不存在。"
+
+msgid "The memory has been existed already."
+msgstr "该内存已经存在。"
+
+msgid "The memory is not exist."
+msgstr "内存不存在。"
+
+msgid "The other has been existed already."
+msgstr "该参数已经存在。"
+
+msgid "The other is not exist."
+msgstr "参数不存在。"
+
+msgid "The power has been existed already."
+msgstr "该电源已经存在。"
+
+msgid "The power is not exist."
+msgstr "电源不存在。"
+
+msgid "The raid has been existed already."
+msgstr "该Raid卡已经存在。"
+
+msgid "The raid is not exist."
+msgstr "Raid卡不存在。"
+
+msgid "The hardwares can not be empty."
+msgstr "数据不能为空。"
+
+msgid "The hardware is not exist."
+msgstr "数据不存在。"
+
+msgid "The model contains %s,can not be deleted."
+msgstr "该型号下包含%s，无法删除"
+
+msgid "The hardware name  %s has been existed already."
+msgstr "该名称 %s 已经存在。"
+
+msgid "The hardwares can not be empty."
+msgstr "硬件不能为空。"
+
+msgid "The name can not be empty."
+msgstr "名称不能为空。"
+
+msgid "There is the model in the vendor, can not delete the vendor."
+msgstr "该厂家下包含型号，无法删除。"
+
+msgid "The model contains param, can not be deleted."
+msgstr "该型号下包含参数，无法删除。"
+
+msgid "The group_item is not exist."
+msgstr "参数子项不存在。"
+
+msgid "The parameter items can not be empty."
+msgstr "参数子项不能为空。"
+
+msgid "Invalid parameter, the parameter is repeated."
+msgstr "参数有重复。"
+
+msgid "The param group has been existed already."
+msgstr "该参数组合已经存在。"
+
+msgid "The param group is not exist."
+msgstr "参数组合不存在。"
+
+msgid "The param item name  %s has been existed already."
+msgstr "该参数子项名称 %s 已经存在。"
+
+msgid "The param item code  %s has been existed already."
+msgstr "该参数子项编号 %s 已经存在。"
+
+msgid "The param item is not exist."
+msgstr "参数不存在。"
+
+msgid "The parameter contains the cpu, can not be deleted."
+msgstr "该参数已被CPU占用，无法删除。"
+
+msgid "The parameter contains the memory, can not be deleted."
+msgstr "该参数已被内存占用，无法删除。"
+
+msgid "The parameter contains the disk, can not be deleted."
+msgstr "该参数已被硬盘占用，无法删除。"
+
+msgid "The parameter contains the eth, can not be deleted."
+msgstr "该参数已被网卡占用，无法删除。"
+
+msgid "The parameter contains the bmc, can not be deleted."
+msgstr "该参数已被远控卡占用，无法删除。"
+
+msgid "The parameter contains the power, can not be deleted."
+msgstr "该参数已被电源占用，无法删除。"
+
+msgid "The param name  %s has been existed already."
+msgstr "该参数名称 %s 已经存在。"
+
+msgid "The param code  %s has been existed already."
+msgstr "该参数编号 %s 已经存在。"
+
+msgid "The param is not exist."
+msgstr "参数不存在。"
+
+msgid "The parameter contains the item, can not be deleted."
+msgstr "该参数包含子项，无法删除。"
+
+msgid "IP %s Exceeded the ip range."
+msgstr "IP %s 超出IP段可用范围。"
+
+msgid "The ip %s has been used."
+msgstr "IP %s 已存在。"
+
+msgid "The ip %s has been used by mip."
+msgstr "IP %s 已经被管理IP占用。"
+
+msgid "The ip %s has been used by vip."
+msgstr "IP %s 已经被服务IP占用。"
+
+msgid "The ip %s has been used by gateway."
+msgstr "IP %s 已经被默认网关占用。"
+
+msgid "The ip %s has been used by ipmi."
+msgstr "IP %s 已经被远控卡IP占用。"
+
+msgid "The gateway %s is not matching with ip %s address."
+msgstr "默认网关 %s 必须包含在 %s 段内。"
+
+msgid "Invalid rack or code."
+msgstr "错误的机柜或者组合代码。"
+
+msgid "The code has been exhausted."
+msgstr "组合编码超出限制。"
+
+msgid "Invalid isp or city."
+msgstr "错误的isp或者组城市。"
+
+msgid "Invalid node or code."
+msgstr "错误的节点或者组合代码。"
+
+msgid "Missing param cdn domain id or domain."
+msgstr "缺少cdn域名或者id。"
+
+msgid "Missing param cdn domain customer requirement id."
+msgstr "缺少cdn客戶需求id。"
+
+msgid "The custom config cache is duplicated."
+msgstr "用户自定义的Cache有重复。"
+
+msgid "First word must be vhost"
+msgstr "首字母必须为vhost。"
+
+msgid "The resource logdown is not exist."
+msgstr "该日志下载数据不存在。"
+
+msgid "The resource logcenter is not exist."
+msgstr "该日志中心数据不存在。"
+
+msgid "The resource bill is not exist."
+msgstr "该计费数据不存在。"
+
+msgid "The resource refresh is not exist."
+msgstr "该刷新数据不存在。"
+
+msgid "The dns spider is not exist."
+msgstr "该DNS预热数据不存在。"
+
+msgid "The bill resource has been closed."
+msgstr "计费资源已经关闭。"
+
+msgid "The bill resource has been opened."
+msgstr "计费资源已经开启。"
+
+msgid "Invalid bill resource state."
+msgstr "错误的计费资源状态。"
+
+msgid "The tls verify is not exist."
+msgstr "该证书校验数据不存在。"
+
+msgid "Can onlyquery 10 ip at most."
+msgstr "最多可查询10个IP。"
+
+msgid "The cdn domain has bind ssl cert, please unbound it first."
+msgstr "此加速频道绑定了证书，请先解除绑定。"
+
+msgid "The cdn domain has bind lua script, please unbound it first."
+msgstr "此加速域名绑定了lua脚本，请先解除绑定。"
+
+msgid "The cdn domain has bind rewrite script, please unbound it first"
+msgstr "此加速域名绑定了rewrite脚本，请先解除绑定。"
+
+msgid "The domain is belong to the user already."
+msgstr "该域名已经属于该用户，无需过户。"
+
+msgid "The domain must in the same group."
+msgstr "频道不属于同一个设备组。"
+
+msgid "Please configure user's cdn configuration first."
+msgstr "请先配置用户的cdn配置。"
+
+msgid "%s has not config cdn type %s."
+msgstr "%s未配置加速类型 %s。"
+
+#ARTICLE
+msgid "Cooper %s not found."
+msgstr "合作案例管理 %s 不存在。"
+
+msgid "Link %s not found."
+msgstr "友情链接 %s 不存在。"
+
+msgid "News %s not found."
+msgstr "新闻 %s 不存在。"
+
+msgid "News is not found."
+msgstr "新闻不存在。"
+
+msgid "Slide %s not found."
+msgstr "幻灯片不存在。"
+
+msgid "The two passwords you typed do not match."
+msgstr "两次密码不一致。"
+
+msgid "The user is blocked."
+msgstr "账户异常。"
+
+msgid "The mobile is not exist."
+msgstr "手机号码不存在。"
+
+msgid "The mobile %s not found."
+msgstr "手机号码%s不存在。"
+
+msgid "Exceeded the mobile certify limit."
+msgstr "超出手机号码验证次数限制。"
+
+msgid "The mobile %s has been certified."
+msgstr "手机号码%s已被验证过。"
+
+msgid "The email is not exist."
+msgstr "邮箱地址不存在。"
+
+msgid "Start time must be small than end time."
+msgstr "开始时间必须小于结束时间。"
+
+msgid "Can only check the data of the last three month."
+msgstr "只能查询最近三个月内的数据。"
+
+msgid "The domain %s is not belong to any group."
+msgstr "域名 %s 不属于任何设备组。"
+
+msgid "Site domain %s has been existed."
+msgstr "站点域名 %s 已存在。"
+
+msgid "You can not be login at boss."
+msgstr "您不可以登录BOSS。"
+
+msgid "Sub account can not be login at boss."
+msgstr "子账户不可以登录BOSS。"
+
+msgid "The sub-account can not be switch to other parent users."
+msgstr "该子账户不可切回不属于他的主账户。"
+
+msgid "The user can not be switch to other sub-account."
+msgstr "该主账户不切到不属于他的子账户。"
+
+msgid "The user %s has no permission to fix the workorder."
+msgstr "用户 %s 没有权限处理该工单。"
+
+msgid "Please bind the account first."
+msgstr "请先绑定微信到该账号。"
+
+msgid "Please attention our wechat first."
+msgstr "请先关注我们的公众号。"
+
+msgid "You have not bind account yet."
+msgstr "您的微信还未绑定账号。"
+
+# 云主机
+msgid "The cpu %s has been existed."
+msgstr "已存在核数为%s的CPU。"
+
+msgid "The cpu can not be deleted when it is associated with ECS."
+msgstr "不能删除关联了云主机的CPU。"
+
+msgid "The cpu can not be deleted when it is associated with ECS Plan."
+msgstr "不能删除关联了云主机套餐的CPU。"
+
+msgid "The cpu state has been %s."
+msgstr "CPU状态已开启或关闭。"
+
+msgid "The mem can not be deleted when it is associated with ECS."
+msgstr "不能删除关联了云主机的内存。"
+
+msgid "The mem can not be deleted when it is associated with ECS CPU."
+msgstr "不能删除关联了云主机CPU的内存。"
+
+msgid "The mem can not be deleted when it is associated with ECS Plan."
+msgstr "不能删除关联了云主机套餐的内存。"
+
+msgid "The mem state has been %s."
+msgstr "内存状态已开启或关闭。"
+
+msgid "The disk Upper and lower limits is duplicated."
+msgstr "硬盘上下区间已存在。"
+
+msgid "The disk state has been %s."
+msgstr "硬盘状态已开启或关闭。"
+
+msgid "The network Upper and lower limits is duplicated."
+msgstr "带宽上下区间已存在。"
+
+msgid "The network can not be deleted when it is associated with ECS."
+msgstr "不能删除关联了云主机的带宽。"
+
+msgid "The network state has been %s."
+msgstr "带宽状态已开启或关闭。"
+
+msgid "Specified ecs plan name is duplicated."
+msgstr "指定的套餐名称已被使用，请您更换名称再重试。"
+
+msgid "Specified ecs plan alias name is duplicated."
+msgstr "指定的套餐别名已被使用，请您更换名称再重试。"
+
+msgid "Hard disk parameter has exceed its normal operating range."
+msgstr "硬盘大小超出硬盘套餐范围。"
+
+msgid "Please add %s to system dictionary."
+msgstr "请先添加 %s到系统字典中。"
+
+msgid "The ecs plan %s has been enabled."
+msgstr "云主机套餐 %s已启用。"
+
+msgid "The ecs plan %s has been disabled."
+msgstr "云主机套餐 %s已禁用。"
+
+msgid "The ecs snapshot backup plan state has been %s."
+msgstr "备份快照套餐状态已开启或关闭。"
+
+msgid "The ecs region is not exist."
+msgstr "地域不存在。"
+
+msgid "The ecs region %s has been enabled."
+msgstr "地域 %s 已启用。"
+
+msgid "The ecs region %s has been disabled."
+msgstr "地域 %s 已禁用。"
+
+msgid "Specified ecs zone name is duplicated."
+msgstr "指定的地域名称已被使用，请您更换名称再重试。"
+
+msgid "Specified ecs zone alias name is duplicated."
+msgstr "指定的地域别名已被使用，请您更换名称再重试。"
+
+msgid "The zone can not be deleted when it is associated with ECS."
+msgstr "不能删除关联了云主机的可用区。"
+
+msgid "The zone can not be delete when its sub zones are associated with ECS."
+msgstr "关联了云主机的子可用区的主可用区不能删除。"
+
+msgid "The ecs zone black list is not exist."
+msgstr "可用区黑名单不存在。"
+
+msgid "The ecs zone black list %s is duplicated."
+msgstr "可用区 %s 已加入黑名单。"
+
+msgid "The ecs zone node black list state has been %s."
+msgstr "该黑名单状态已开启或关闭。"
+
+msgid "The ecs zone state has been %s."
+msgstr "该地域状态已开启或关闭。"
+
+msgid "Only private ecs zone can set permission."
+msgstr "只有私有可用区才可以设置权限。"
+
+msgid "The ecs image %s has been existed."
+msgstr "镜像 %s已存在。"
+
+msgid "The image can not be deleted when it is associated with ECS."
+msgstr "不能删除关联了云主机的镜像。"
+
+msgid "The image state has been %s."
+msgstr "该镜像状态已开启或关闭。"
+
+msgid "Only private ecs image can set user and role permission."
+msgstr "只有私有镜像才可以设置用户、角色权限。"
+
+msgid "Image and zone must have the same channel."
+msgstr "镜像与可用区必须有相同的渠道。"
+
+msgid "The specified name is wrongly formed."
+msgstr "名称，长度为 [2, 32] 个英文或中文字符，必须以大小字母或中文开头，可包含数字、点号（.）、半角冒号（:）、下划线（_）或短横线（-）。"
+
+msgid "Specified ecs instance name is duplicated."
+msgstr "指定的云主机名称已被使用，请您更换名称再重试。"
+
+msgid "The disk size must be an integer multiple of 10."
+msgstr "硬盘大小必须是10的整数倍。"
+
+msgid "The cpu must be match with memory."
+msgstr "CPU和内存必须匹配。"
+
+msgid "The specified value of parameter password is malformed."
+msgstr "长度为[6, 32]个字符，必须同时包含三类不同的字符（大、小写字母，数字和特殊符号）,支持以下特殊字符：( ) ` ~ ! @ # $ % ^ & * - + = | { } : ;  < > , . ?"
+
+msgid "No permission to use this image."
+msgstr "无权限使用该镜像。"
+
+msgid "No permission to use this zone."
+msgstr "无权限使用该地域。"
+
+msgid "The number of instance count lower the limit."
+msgstr "至少要申请一台云主机。"
+
+msgid "The number of instance count exceeds the limit %s per time."
+msgstr "每次最多可申请%s台云主机。"
+
+msgid "The number of instance count exceeds the limit."
+msgstr "超过了可申请云主机数量的上限。"
+
+msgid "The count of cpu exceeds the limit %s."
+msgstr "超过CPU核数限制%s."
+
+msgid "The capacity of memory exceeds the limit %s."
+msgstr "超过内存容量限制%s."
+
+msgid "The specified disk size are beyond the permitted range."
+msgstr "硬盘大小超出了取值范围。"
+
+msgid "The specified network bandwidth are beyond the permitted range."
+msgstr "网络带宽超出了取值范围。"
+
+msgid "Workorder %s can not merge with its self."
+msgstr "工单 %s 不能与其自身合并。"
+
+msgid "The client token are beyond the permitted range."
+msgstr "指定的ClientToken字符串长度超出限制，必须大于16字节且小于等于64字节。"
+
+msgid "Idempotent Parameter Mismatch."
+msgstr "幂等性token已被使用。"
+
+msgid "The specified net_id and zone_id mismatch."
+msgstr "指定的net_id和zone_id不匹配。"
+
+msgid "No nodes available."
+msgstr "没有可用节点。"
+
+msgid "No vmid available."
+msgstr "申请云主机数量超出可创建数量。"
+
+msgid "The vmid is zero."
+msgstr "申请的vmid为0。"
+
+msgid "The record is open, please close it first."
+msgstr "启用状态无法删除，请先禁用。"
+
+msgid "The region is used by zone, please delete the zone first."
+msgstr "地域正被可用区使用中，请先删除关联的可用区。"
+
+msgid "Discount can not be larger than 100 or less than 1."
+msgstr "折扣不能大于100或者小于1。"
+
+msgid "The %s Upper and lower limits is duplicated."
+msgstr "%s上下区间已存在。"
+
+msgid "The lower limit cannot be greater than the upper limit."
+msgstr "下限不能大于等于上限。"
+
+msgid "Only Boss user can migrate the domain."
+msgstr "BOSS账户才能迁移频道。"
+
+msgid "There is no domain in the pool can be migrated."
+msgstr "该资源池下没有可迁移的频道。"
+
+msgid "The ecs zone is not exist."
+msgstr "可用区不存在。"
+
+msgid "The ecs zone %s does not support isp %s."
+msgstr "云主机可用区 %s不支持运营商 %s。"
+
+msgid "The ecs zone %s has not bind bandwidth package with isp %s."
+msgstr "云主机可用区 %s尚未绑定运营商 %s的带宽套餐。"
+
+msgid "The ecs zone %s is not opened."
+msgstr "云主机可用区 %s未开启。"
+
+msgid "Fail to generate instance name randomly."
+msgstr "随机生成云主机名称失败。"
+
+msgid "Virtual router rule is not exists."
+msgstr "虚拟路由器规则不存在。"
+
+msgid "Virtual router is not exists."
+msgstr "虚拟路由器不存在。"
+
+msgid "The zone channel mismatch image channel."
+msgstr "可用区和镜像属于不同渠道。"
+
+msgid "Ecs zone permission is not found."
+msgstr "可用区权限不存在。"
+
+msgid "Ecs zone permission has been exist, %s has bind %s."
+msgstr "可用区权限已存在，%s 已绑定 %s。"
+
+msgid "The ecs image is not exist."
+msgstr "镜像不存在。"
+
+msgid "Ecs image permission is not found."
+msgstr "镜像权限不存在。"
+
+msgid "Ecs image permission has been exist, %s has bind %s."
+msgstr "镜像权限已存在，%s 已绑定 %s。"
+
+msgid "Please keep the ip type consistent."
+msgstr "请保持IP类型一致。"
+
+msgid "The cloud storage quota exceeded, your account limit is %s."
+msgstr "云硬盘配额已超额，当前配额 %s。"
+
+msgid "Ecs instance is not found."
+msgstr "云主机不存在。"
+
+msgid "The instance %s is not found."
+msgstr "ID为 %s 的云主机不存在。"
+
+msgid "The instance node %s is not exist."
+msgstr "云节点 %s 不存在。"
+
+msgid "Stop task failed."
+msgstr "停止任务失败。"
+
+msgid "The ECS is already in the delete queue."
+msgstr "该云主机已经在删除队列了，请不要重复提交。"
+
+msgid "The ECS is already in the restore queue."
+msgstr "该云主机正在重置。"
+
+msgid "The ECS is already in the create queue."
+msgstr "该云主机正在创建。"
+
+msgid "The ECS has been locked."
+msgstr "该云主机已被锁定，请稍后重试。"
+
+msgid "The ecs instance has been started."
+msgstr "云主机已经开启。"
+
+msgid "The ecs instance has been stopped."
+msgstr "云主机已经关闭。"
+
+msgid "The ecs instance has been suspended."
+msgstr "云主机已经挂起。"
+
+msgid "Only the stopped ecs instance can be started."
+msgstr "只有关机的云主机才可以开启。"
+
+msgid "Only the started ecs instance can be stopped."
+msgstr "只有开启的云主机才可以关闭。"
+
+msgid "Only the started ecs instance can be reboot."
+msgstr "只有开启的云主机才可以重启。"
+
+msgid "Only the started ecs instance can be suspended."
+msgstr "只有开启的云主机才可以挂起。"
+
+msgid "Only the suspended ecs instance can be resumed."
+msgstr "只有挂起的云主机才可以解除限制。"
+
+msgid "Only the running or stopped ecs instance can be transfer."
+msgstr "只有运行和停止的云主机才可以过户。"
+
+msgid "Only instance with self channel can be suspended."
+msgstr "只有自建渠道的云主机才可以挂起。"
+
+msgid "Only instance with self channel can be resumed."
+msgstr "只有自建渠道的云主机才可以解除限制。"
+
+msgid "Ecs instance %s is restoring."
+msgstr "云主机 %s正在重装。"
+
+msgid "Only ecs instance that are running, shutting down, or abnormal can be restored."
+msgstr "只有运行、关机、异常的云主机才能重置系统。"
+
+msgid "Only started or stopped instance can modify name and note."
+msgstr "只有开启或者关闭的云主机才可以修改名称和备注。"
+
+msgid "Ecs instance backup %s has been existed."
+msgstr "云主机备份 %s已经存在。"
+
+msgid "Ecs instance %s still has unfinished backup task."
+msgstr "云主机 %s还有尚未完成的备份任务。"
+
+msgid "Only started ecs instance can run backup task."
+msgstr "只有开启的云主机才能进行备份。"
+
+msgid "Ecs instance backup is not exit."
+msgstr "云主机备份不存在。"
+
+msgid "Ecs instance backup is not deleted."
+msgstr "云主机备份不是删除状态。"
+
+msgid "Ecs instance backup is not in a normal state."
+msgstr "云主机备份不是正常状态。"
+
+msgid "Every ecs instance can own %s backups at most."
+msgstr "每台云主机最多只能拥有%s个备份。"
+
+msgid "CPU conf %s cores is not exist."
+msgstr "不存在的CPU配置: %s核。"
+
+msgid "Mem conf %s is not exist."
+msgstr "不存在的内存配置: %s。"
+
+msgid "The ecs plan is not exist."
+msgstr "云主机套餐不存在。"
+
+msgid "The ecs plan %s has been existed."
+msgstr "云主机套餐 %s已经存在。"
+
+msgid "%s cores and %s are not related."
+msgstr "%s核 和 %s 没有关联关系。"
+
+msgid "IPv4 address is not valid."
+msgstr "IPv4地址不合法。"
+
+msgid "IPv6 address is not valid."
+msgstr "IPv6地址不合法。"
+
+msgid "Specified IPv4 CIDR block overlapped with other subnet."
+msgstr "该交换机IPv4网段与其他交换机的网段重叠或与已有的自定义路由的目标网段重叠，请使用其他未被占用的网段。"
+
+msgid "Specified IPv6 CIDR block overlapped with other subnet."
+msgstr "该交换机IPv6网段与其他交换机的网段重叠或与已有的自定义路由的目标网段重叠，请使用其他未被占用的网段。"
+
+msgid "Exceeded the max value for VLANs."
+msgstr "VLAN号不能超过4096。"
+
+msgid "VSwitch not exist."
+msgstr "指定的虚拟交换机不存在。"
+
+msgid "VSwitch quota exceeded."
+msgstr "虚拟交换机数量达到配额上限。"
+
+msgid "VSwitch cannot be deleted when there are some ecs dependent with it."
+msgstr "不能删除关联了云主机的虚拟交换机。"
+
+msgid "The default virtual switch is already exist."
+msgstr "默认虚拟交换机已经存在，每个开用区/用户只能有一个默认交换机。"
+
+msgid "Routing rule is not exist."
+msgstr "路由规则不存在。"
+
+msgid "Routing rule %s has been enabled."
+msgstr "路由规则 %s已启用。"
+
+msgid "Routing rule %s has been disabled."
+msgstr "路由规则 %s已禁用。"
+
+msgid "Specified ecs disk name is duplicated."
+msgstr "云盘名称已存在。"
+
+msgid "The disk size value out of range %s."
+msgstr "云盘大小超出范围%s"
+
+msgid "The cloud disk must be an integer multiple of 10."
+msgstr "云盘步长必须是10的整数倍。"
+
+msgid "The cloud host that mounts the cloud disk %s does not exist."
+msgstr "挂载云硬盘 %s的云主机不存在。"
+
+msgid "Router rule can not be empty."
+msgstr "路由规则不能为空。"
+
+msgid "Vpc is not exist."
+msgstr "VPC不存在。"
+
+msgid "Vpc %s has been enabled."
+msgstr "VPC %s已启用。"
+
+msgid "Vpc %s has been disabled."
+msgstr "VPC %s已禁用。"
+
+msgid "Switch is not exist."
+msgstr "交换机不存在。"
+
+msgid "Switch %s has been enabled."
+msgstr "交换机 %s已启用。"
+
+msgid "Switch %s has been disabled."
+msgstr "交换机 %s已禁用。"
+
+msgid "Switch name can not be empty."
+msgstr "交换机名称不能为空。"
+
+msgid "The virtual switch %s has enable source nat, no need to configure public ip."
+msgstr "虚拟交换机 %s已启用源NAT，无需配置公网IP。"
+
+msgid "Specified disk type is not supported."
+msgstr "指定的磁盘类型不支持。"
+
+msgid "The zone does not have shared storage and cannot create a cloud drive."
+msgstr "该节点没有共享存储，不能创建云硬盘。"
+
+msgid "The zone has not enough storage space."
+msgstr "存储空间不足，请联系管理员。"
+
+msgid "The number of cloud drives you have applied has exceeded the limit."
+msgstr "您申请的云硬盘数量超过限制了。"
+
+msgid "The specified disk is not a portable disk."
+msgstr "磁盘正在被云主机使用，请先解除绑定。"
+
+msgid "The specified operation is denied as your disk owing fee."
+msgstr "指定的云盘已欠费。"
+
+msgid "The specified disk type is not supported."
+msgstr "该硬盘类型不是云盘。"
+
+msgid "The specified device has been occupied."
+msgstr "指定的云盘已经被挂载到其他实例上。"
+
+msgid "The specified disk and instance not belong to the same user."
+msgstr "云盘和云主机实例不属于同一个用户。"
+
+msgid "The specified operation is denied as your instance owing fee."
+msgstr "指定的云主机实例已欠费。"
+
+msgid "The specified instance and disk are not in the same zone."
+msgstr "指定云盘和云主机实例必须在同一个可用区。"
+
+msgid "The instance is locked due to security."
+msgstr "指定的云主机实例被安全锁定。"
+
+msgid "The status of the disk must be available."
+msgstr "云盘的状态必须为待挂载。"
+
+msgid "The status of the disk must be attached."
+msgstr "云盘的状态必须为已挂载。"
+
+msgid "Disk param must be greater than 20 and less than 5000."
+msgstr "云盘大小必须大于20G,小于5000G。"
+
+msgid "The status of the ecs instance to be attached must be either running or stopped."
+msgstr "待挂载的ECS实例的状态必须为运行中或已停止。"
+
+msgid "The status of the ecs instance to be detached must be either running or stopped."
+msgstr "待卸载的ECS实例的状态必须为运行中或已停止。"
+
+msgid "The ecs instance attached the cloud disk has been exceeded 15 limit."
+msgstr "该云主机实例挂载云盘数量已经超额。"
+
+msgid "The specified disk is not attached any ecs instance."
+msgstr "该云盘没有挂载任何云主机实例实例。"
+
+msgid "The security group has been applied to the instance. Please remove the first."
+msgstr "请先移除该云主机实例绑定的防火墙。"
+
+msgid "You can't delete a ecs instance that is associated with an security group."
+msgstr "请先解除该云主机实例关联的安全组。"
+
+msgid "You can't delete a ecs instance that is associated with an vswitch."
+msgstr "请先解除该云主机实例关联的交换机。"
+
+msgid "Virtual router has associated virtual switch."
+msgstr "虚拟路由器有关联的虚拟交换机。"
+
+msgid "Virtual router has not associated virtual switch."
+msgstr "虚拟路由器没有关联的虚拟交换机。"
+
+msgid "Virtual router has associated ecs instance."
+msgstr "虚拟路由器有关联的云主机。"
+
+msgid "A user can only create one virtual router in an availability zone."
+msgstr "一个用户在一个可用区只能创建一个虚拟路由器。"
+
+msgid "The ecs instance price calculation error."
+msgstr "云主机价格计算错误。"
+
+msgid "Only the running or stopped ecs instance can be operation."
+msgstr "待操作的ECS实例状态必须为运行中或已停止。"
+
+msgid "Only instance with self channel can be migrate."
+msgstr "仅自建ECS实例可迁移。"
+
+msgid "Only the shared storage can be migrate."
+msgstr "仅共享存储ECS实例可迁移。"
+
+msgid "Only the same zone ecs instance can be migrate."
+msgstr "仅同一可用区的ECS实例可迁移。"
+
+msgid "The migrate zone is in the black list."
+msgstr "待迁移节点在黑名单中。"
+
+msgid "The availability zone does not have a node named %s."
+msgstr "该可用区没有名为%s的节点。"
+
+msgid "Please create a virtual router in the availability zone %s first."
+msgstr "请先在可用区 %s添加一台虚拟路由器。"
+
+msgid "No virtual router image available."
+msgstr "没有可用的虚拟路由器镜像。"
+
+msgid "Error to calculate ip address."
+msgstr "计算IP地址失败。"
+
+msgid "Please close the virtual router first."
+msgstr "请先关闭虚拟路由器。"
+
+msgid "The virtual router is not running."
+msgstr "虚拟路由器未运行。"
+
+msgid "The virtual switch has bind virtual router."
+msgstr "虚拟交换机已绑定虚拟路由器。"
+
+msgid "The virtual switch has not bind virtual router."
+msgstr "虚拟交换机未绑定虚拟路由器。"
+
+msgid "Configuration the ethernet interfaces error."
+msgstr "网卡配置失败。"
+
+msgid "The virtual switch %s has not bind the virtual router %s."
+msgstr "虚拟交换机 %s并未绑定虚拟路由器 %s。"
+
+msgid "Please open the virtual switch first."
+msgstr "请先开启虚拟交换机。"
+
+msgid "The virtual switch %s has enabled source NAT."
+msgstr "虚拟交换机 %s已开启源NAT。"
+
+msgid "Failed to delete the virtual router, please try again later."
+msgstr "虚拟路由器删除失败，请稍后再试。"
+
+msgid "No permission to use the virtual router %s."
+msgstr "无权限操作虚拟路由器 %s。"
+
+msgid "The zone does not have any physical nodes."
+msgstr "该可用区没有绑定任何物理节点。"
+
+msgid "Eip is not exist."
+msgstr "弹性IP不存在。"
+
+msgid "Reserve eip failed."
+msgstr "申请弹性IP失败。"
+
+msgid "The eip quota exceeded, your account limit is %s."
+msgstr "弹性IP配额已超额，当前配额 %s。"
+
+msgid "No permission to use the eip %s."
+msgstr "无权限操作弹性IP %s。"
+
+msgid "The vrouter quota exceeded, your account limit is %s."
+msgstr "虚拟路由器配额已超额，当前配额 %s。"
+
+msgid "Specified elastic IP address and ECS instance are not in the same region."
+msgstr "该EIP和ECS实例不在同一个地域内。"
+
+msgid "Specified instance already is associated."
+msgstr "该实例已绑定EIP，不能再绑定，如需更换实例绑定的EIP，请先解绑。"
+
+msgid "Current instance status does not support this operation."
+msgstr "当前实例的状态不支持该操作。"
+
+msgid "The security group is not exist."
+msgstr "安全组不存在。"
+
+msgid "Security group %s is not empty."
+msgstr "安全组 %s 不为空。"
+
+msgid "There is no need to apply the security group"
+msgstr "安全组不需要再次应用。"
+
+msgid "The security group is empty."
+msgstr "安全组下没有规则。"
+
+msgid "Please set your public bandwidth."
+msgstr "请设置您的公网带宽。"
+
+msgid "The available zone %s does not support disk type %s."
+msgstr "可用区 %s不支持磁盘类型 %s。"
+
+msgid "The virtual switch %s is not associated with the virtual router %s."
+msgstr "虚拟交换机 %s未关联虚拟路由器 %s。"
+
+msgid "The zone is empty, it can only set default."
+msgstr "可用区为空，只能设为默认状态。"
+
+msgid "The isp %s had a default net."
+msgstr "运营商 %s 已存在一个默认带宽。"
+
+msgid "The ecs instance is restricted, can not be deleted."
+msgstr "受限制的云主机不能删除。"
+
+msgid "There is no cdn bill conf."
+msgstr "尚未设置CDN计费方式。"
+
+msgid "Can only change the billing method once a day."
+msgstr "一天只能变更一次计费方式。"
+
+msgid "Your current billing method does not support this operation."
+msgstr "您当前的计费方式不支持该操作。"
+
+msgid "The snapshot is not exists."
+msgstr "快照不存在。"
+
+msgid "Every cloud host can only create %s snapshots at most."
+msgstr "每台云主机最多只能创建%s份快照。"
+
+msgid "The ecs instance %s is in recovery."
+msgstr "云主机 %s处于恢复中。"
+
+msgid "Every cloud host can only create %s backups at most."
+msgstr "每台云主机最多只能创建%s份备份。"
+
+msgid "The ecs is performing other tasks, please try again later."
+msgstr "云主机正在执行其他任务，请稍后操作。"
+
+msgid "The snapshot is not in a normal state."
+msgstr "快照不是正常状态。"
+
+msgid "New user cannot be the same as the original user."
+msgstr "新用户不能与原用户相同。"
+
+msgid "The cloud host has applied a security group, please remove the security group first."
+msgstr "该云主机应用了安全组，请先移出安全组。"
+
+msgid "Please remove the virtual switch associated with the cloud host first."
+msgstr "请先移除云主机关联的交换机。"
+
+msgid "There is no recharge log."
+msgstr "没有充值记录。"

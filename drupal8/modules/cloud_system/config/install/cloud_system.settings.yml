@@ -1,0 +1,67 @@
+# If set true, Automatic using http request filter.
+is_api_service: 0
+instance_api: https://instanceapi.cloud.cn/API/
+cdn_api: https://cdnapi.cloud.cn/API/
+dns_api: https://dnsapi.cloud.cn/API/
+user_api: https://userapi.cloud.cn/API/
+common_api: http://192.168.112.103:9899/API/
+
+# Rate limiter settings.
+# By default the rate limiter is disabled.
+rate_limiter_enable: 0
+# Allow 10 requests.
+rate_limiter_requests: 10
+# Allow number of requests in the given time window; defaults to 3600 sec.
+rate_limiter_time_cap: 3600
+# The message when the rate is reached.
+rate_limiter_message: ''
+# Rate limiting rule. Defaults to checking all Web-service requests.
+rate_limiter_limiting_rule: 0
+# Default IP white list.
+rate_limiter_whitelist: ''
+
+# Don't Do Role-Based Authorization Checks.
+ignore_apis:
+  0:
+    uri: '/API/OAuth/authorize'
+    method: 'POST'
+  1:
+    uri: '/API/profile'
+    method: 'POST'
+  2:
+    uri: '/API/profile/code'
+    method: 'PUT'
+  3:
+    uri: '/API/profile/password'
+    method: 'POST'
+  4:
+    uri: '/API/profile/password'
+    method: 'PUT'
+
+ignore_routes:
+  rest_csrftoken:
+    'POST'
+
+# Token expire time.
+token_expires_in: 300
+
+# Crypt salt.
+crypt_salt: 'verycloud#cryptpass'
+
+# Verfication captcha expire time.
+captcha_expires_in: 900
+# Allow number of verfication.
+rate_limiter_verfication: 3
+
+# Workflow notice mail enable.
+workflow_notice_mail: 1
+# Workflow notice sms enable.
+workflow_notice_sms: 1
+# Workflow todo list.
+workflow_todo_list: http://voss-portal-dev.cloud.cn/profile/manage/todo
+
+# ip white list switch
+ip_whitelist: 0
+
+# Allow number of workflow urge.
+workflow_urge_rate_limiter: 3

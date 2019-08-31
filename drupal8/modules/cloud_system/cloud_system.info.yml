@@ -1,0 +1,8 @@
+name: cloud_system
+type: module
+description: Provides some global functions.
+core: 8.x
+package: VeryCloud
+dependencies:
+  - rest
+  - serialization

@@ -9,6 +9,8 @@ services:
       MYSQL_DATABASE: "${MYSQL_DATABASE}"
       MYSQL_USER: "${MYSQL_USER}"
       MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+    volumes:
+      - ${MYSQL_DATA_DIR}:/var/lib/mysql
     restart: always
     networks:
       - cloud
@@ -17,11 +19,11 @@ services:
     image: nextcloud
     container_name: nextcloud
     ports:
-      - "1080:80"
+      - "${NEXTCLOUD_HTTP_PORT}:80"
     depends_on:
       - mysql
     environment:
-      NEXTCLOUD_TRUSTED_DOMAINS: "${TRUSTED_DOMAINS}"
+      NEXTCLOUD_TRUSTED_DOMAINS: "${NEXTCLOUD_TRUSTED_DOMAINS}"
     volumes:
       - ${NEXTCLOUD_DATA_DIR}:/var/www/html/data
     restart: always

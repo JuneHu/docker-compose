@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql:5
+    container_name: mysql5
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+    volumes:
+      - ${MYSQL_DATA_DIR}:/var/lib/mysql
+    restart: always
+    networks:
+      - phpdev
+
+  php:
+    image: php:7.3-fpm-alpine3.10
+    container_name: php7
+    volumes:
+      - ${SOURCE_DIR}:/var/www/html/:rw
+    restart: always
+    networks:
+      - phpdev
+
+  nginx:
+    image: nginx:1.17.2-alpine
+    container_name: nginx
+    volumes:
+      - ${NGINX_CONFD_DIR}:/etc/nginx/conf.d/:rw
+      - ${NGINX_CONF_FILE}:/etc/nginx/nginx.conf:ro
+      - ${NGINX_LOG_DIR}:/var/log/nginx/:rw
+    ports:
+      - "${NGINX_HTTP_HOST_PORT}:80"
+      - "${NGINX_HTTPS_HOST_PORT}:443"
+    restart: always
+    environment:
+      TZ: "$TZ"
+    networks:
+      - phpdev
+
+networks:
+  phpdev:

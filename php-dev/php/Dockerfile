@@ -1,6 +1,7 @@
-# # 从官方基础版本构建
-FROM php:7.3-fpm-alpine
-# 官方版本默认安装扩展: 
+# 从官方基础版本构建
+ARG PHP_VERSION=7.3
+FROM php:${PHP_VERSION}-fpm-alpine
+# 官方版本默认安装扩展:
 # Core ctype curl
 # date dom
 # fileinfo filter ftp
@@ -23,6 +24,13 @@ FROM php:7.3-fpm-alpine
 
 # 更新为国内的镜像
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+
+# 时区
+ARG TZ=Asia/Shanghai
+# 设置时区1
+RUN apk add --no-cache tzdata \
+    && cp "/usr/share/zoneinfo/${TZ}" /etc/localtime \
+    && echo "${TZ}" > /etc/timezone
 
 # 安装PHP扩展
 # Possible values for ext-name:

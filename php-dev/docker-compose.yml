@@ -16,7 +16,11 @@ services:
       - phpdev
 
   php:
-    image: php:7.3-fpm-alpine3.10
+    build:
+      context: ./php/
+      args:
+        TZ: "$TZ"
+        PHP_VERSION: "${PHP_VERSION}"
     container_name: php7
     volumes:
       - ${SOURCE_DIR}:/var/www/html/:rw
@@ -25,7 +29,11 @@ services:
       - phpdev
 
   nginx:
-    image: nginx:1.17.2-alpine
+    build:
+      context: ./nginx/
+      args:
+        TZ: "$TZ"
+        NGINX_VERSION: "${NGINX_VERSION}"
     container_name: nginx
     volumes:
       - ${NGINX_CONFD_DIR}:/etc/nginx/conf.d/:rw

@@ -8,5 +8,5 @@
 版本
 
 - php: 7.3.x
-- redis: 5.0.0
+- redis: 5.0.5
 - swoole: 4.4.5

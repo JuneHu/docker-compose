@@ -43,8 +43,6 @@ services:
       - "${NGINX_HTTP_HOST_PORT}:80"
       - "${NGINX_HTTPS_HOST_PORT}:443"
     restart: always
-    environment:
-      TZ: "$TZ"
     networks:
       - phpdev
 

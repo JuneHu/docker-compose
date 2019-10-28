@@ -27,7 +27,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
 # 时区
 ARG TZ=Asia/Shanghai
-# 设置时区1
+# 设置时区
 RUN apk add --no-cache tzdata \
     && cp "/usr/share/zoneinfo/${TZ}" /etc/localtime \
     && echo "${TZ}" > /etc/timezone

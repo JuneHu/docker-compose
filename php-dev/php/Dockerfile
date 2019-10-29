@@ -1,6 +1,6 @@
 # 从官方基础版本构建
 ARG PHP_VERSION=7.3
-FROM php:${PHP_VERSION}-fpm-alpine
+FROM php:${PHP_VERSION}-alpine
 # 官方版本默认安装扩展:
 # Core ctype curl
 # date dom

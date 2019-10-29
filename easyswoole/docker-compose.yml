@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql:${MYSQL_VERSION}
+    container_name: mysql5
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+      TZ: "$TZ"
+    volumes:
+      - ${MYSQL_DATA_DIR}:/var/lib/mysql
+    restart: always
+    networks:
+      - easyswoole
+
+  easyswoole:
+    image: junehu/easyswoole:3.3.2
+    container_name: easyswoole
+    ports:
+      - "${EASYSWOOLE_PORT}:9501"
+    volumes:
+      - ${SOURCE_DIR}:/var/www/easyswoole:rw
+    restart: always
+    networks:
+      - easyswoole
+
+  redis:
+    build:
+      context: ./redis/
+      args:
+        TZ: "$TZ"
+        REDIS_VERSION: "${REDIS_VERSION}"
+    container_name: redis
+    ports:
+      - "${REDIS_HOST_PORT}:6379"
+    volumes:
+      - ${REDIS_CONF_FILE}:/etc/redis.conf:ro
+      - ${REDIS_DATA_DIR}:/data
+    restart: always
+    entrypoint: ["redis-server", "/etc/redis.conf"]
+    networks:
+      - easyswoole
+
+networks:
+  easyswoole:

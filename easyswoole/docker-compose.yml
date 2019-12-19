@@ -17,7 +17,7 @@ services:
       - easyswoole
 
   easyswoole:
-    image: junehu/easyswoole:3.3.2
+    image: junehu/easyswoole:3.3.4
     container_name: easyswoole
     ports:
       - "${EASYSWOOLE_PORT}:9501"

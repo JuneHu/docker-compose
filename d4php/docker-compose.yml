@@ -17,7 +17,7 @@ services:
       - phpwork
 
   php:
-    image: hyj1412/php:${REDIS_VERSION}-fpm-alpine
+    image: hyj1412/php:${PHP_VERSION}-fpm-alpine
     container_name: php
     volumes:
       - ${SOURCE_DIR}:/var/www/html/:rw

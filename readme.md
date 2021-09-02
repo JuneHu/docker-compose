@@ -2,5 +2,5 @@
 
 - nextcloud
 - drupal8
-- php-dev 通用PHP开发
+- d4php PHP本地开发用的docker compose
 - easyswoole

@@ -1,0 +1,11 @@
+2021/09/02 20:35:20 [emerg] 1#1: host not found in upstream "php7" in /etc/nginx/conf.d/virtual.conf:9
+2021/09/02 21:34:30 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/virtual.conf:9
+2021/09/02 21:34:30 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/virtual.conf:9
+2021/09/02 21:34:31 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/virtual.conf:9
+2021/09/02 21:34:32 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/virtual.conf:9
+2021/09/02 21:34:33 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/virtual.conf:9
+2021/09/02 21:34:35 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/virtual.conf:9
+2021/09/02 21:34:39 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/virtual.conf:9
+2021/09/02 21:34:46 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/virtual.conf:9
+2021/09/02 21:34:59 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/virtual.conf:9
+2021/09/02 21:35:25 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/virtual.conf:9

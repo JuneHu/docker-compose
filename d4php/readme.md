@@ -1,15 +1,18 @@
-# PHP development environment powered by docker
+# PHP开发环境之docker compose一把梭
 
-已支持常用扩展
+已安装扩展
 
+- mcrypt
+- pdo
+- pdo_mysql
 - redis
 - swoole
 
 版本
 
-- php: 7.3.x
-- redis: 5.0.5
-- swoole: 4.4.5
+- php: 7.4
+- redis: 5.0.13
+- swoole: 4.7.0
 
 默认监听`1080`端口，可修改`.env`文件中的`NGINX_HTTP_HOST_PORT`参数调整
 

@@ -61,7 +61,7 @@ fi
 # 这里需要注意redis版本与PHP的兼容性，此处安装的是5.3.4，需要php7.0或者更高版本
 if [[ -z "${EXTENSIONS##*,redis,*}" ]]; then
   echo "---------- Install redis ----------"
-  pecl install swoole-5.3.4
+  pecl install redis-5.3.4
   docker-php-ext-enable redis
 fi
 

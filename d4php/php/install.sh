@@ -2,7 +2,7 @@
 
 export MC="-j$(nproc)"
 # 定义需要安装的扩展
-PHP_EXTENSIONS='pdo_mysql,mysqli,gd,opcache,redis,swoole,mcrypt'
+PHP_EXTENSIONS='pdo_mysql,mysqli,gd,opcache,redis,mcrypt'
 
 echo
 echo "============================================"
@@ -24,30 +24,30 @@ echo
 # 安装依赖库
 apk add --no-cache $PHPIZE_DEPS
 
-if [[ -z "${EXTENSIONS##*,pdo_mysql,*}" ]]; then
+if [[ -z "${PHP_EXTENSIONS##*,pdo_mysql,*}" ]]; then
   echo "---------- Install pdo_mysql ----------"
   docker-php-ext-install ${MC} pdo_mysql
 fi
 
-if [[ -z "${EXTENSIONS##*,mysqli,*}" ]]; then
+if [[ -z "${PHP_EXTENSIONS##*,mysqli,*}" ]]; then
   echo "---------- Install mysqli ----------"
   docker-php-ext-install ${MC} mysqli
 fi
 
-if [[ -z "${EXTENSIONS##*,pcntl,*}" ]]; then
+if [[ -z "${PHP_EXTENSIONS##*,pcntl,*}" ]]; then
   echo "---------- Install pcntl ----------"
   docker-php-ext-install ${MC} pcntl
 fi
 
-if [[ -z "${EXTENSIONS##*,opcache,*}" ]]; then
+if [[ -z "${PHP_EXTENSIONS##*,opcache,*}" ]]; then
     echo "---------- Install opcache ----------"
-    docker-php-ext-install opcache
+    docker-php-ext-install ${MC} opcache
 fi
 
 # swoole扩展 https://pecl.php.net/package/swoole
 # 这里需要注意swoole版本与PHP的兼容性，此处安装的是4.7.1，需要php7.2或者更高版本
 # 官方文档 https://wiki.swoole.com/#/environment
-if [[ -z "${EXTENSIONS##*,swoole,*}" ]]; then
+if [[ -z "${PHP_EXTENSIONS##*,swoole,*}" ]]; then
   echo "---------- Install swoole ----------"
   docker-php-ext-install sockets
   apk add --no-cache libstdc++
@@ -59,7 +59,7 @@ fi
 
 # redis扩展 https://pecl.php.net/package/redis
 # 这里需要注意redis版本与PHP的兼容性，此处安装的是5.3.4，需要php7.0或者更高版本
-if [[ -z "${EXTENSIONS##*,redis,*}" ]]; then
+if [[ -z "${PHP_EXTENSIONS##*,redis,*}" ]]; then
   echo "---------- Install redis ----------"
   pecl install redis-5.3.4
   docker-php-ext-enable redis
@@ -67,7 +67,7 @@ fi
 
 # mcrypt扩展 https://pecl.php.net/package/mcrypt
 # 这里需要注意mcrypt版本与PHP的兼容性，此处安装的是1.0.4，需要php7.2或者更高版本
-if [[ -z "${EXTENSIONS##*,mcrypt,*}" ]]; then
+if [[ -z "${PHP_EXTENSIONS##*,mcrypt,*}" ]]; then
   echo "---------- Install mcrypt ----------"
   apk add --no-cache libmcrypt-dev libmcrypt re2c
   pecl install mcrypt-1.0.4

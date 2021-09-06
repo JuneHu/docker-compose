@@ -2,21 +2,11 @@
 
 **仅用于学习和开发使用**
 
-已安装扩展
-
-- mcrypt
-- pdo
-- pdo_mysql
-- redis
-- swoole
-
 版本
 
 - php: 7.4
 
-  > php 的 swoole 扩展: 4.7.1
-  >
-  > php 的 redis 扩展: 5.3.4
+  > 安装 PHP 扩展 `mcrypt`, `pdo_mysql`, `redis`, `gd`, `opcache`
 
 - redis: 5.0.13
 - mysql: 5.7

@@ -2,7 +2,7 @@
 
 export MC="-j$(nproc)"
 # 定义需要安装的扩展
-PHP_EXTENSIONS='pdo_mysql,mysqli,gd,opcache,redis,mcrypt'
+PHP_EXTENSIONS=',bcmath,pdo_mysql,mysqli,gd,redis,mcrypt,'
 
 echo
 echo "============================================"
@@ -12,6 +12,31 @@ echo "Extra Extensions          : ${PHP_EXTENSIONS}"
 echo "Work directory            : ${PWD}"
 echo "============================================"
 echo
+
+#
+# Check if current php version is greater than or equal to
+# specific version.
+#
+# For example, to check if current php is greater than or
+# equal to PHP 7.0:
+#
+# isPhpVersionGreaterOrEqual 7 0
+#
+# Param 1: Specific PHP Major version
+# Param 2: Specific PHP Minor version
+# Return : 1 if greater than or equal to, 0 if less than
+#
+isPhpVersionGreaterOrEqual()
+{
+    local PHP_MAJOR_VERSION=$(php -r "echo PHP_MAJOR_VERSION;")
+    local PHP_MINOR_VERSION=$(php -r "echo PHP_MINOR_VERSION;")
+
+    if [[ "$PHP_MAJOR_VERSION" -gt "$1" || "$PHP_MAJOR_VERSION" -eq "$1" && "$PHP_MINOR_VERSION" -ge "$2" ]]; then
+        return 1;
+    else
+        return 0;
+    fi
+}
 
 # docker-php-ext-install可以安装PHP的扩展
 #
@@ -23,6 +48,28 @@ echo
 
 # 安装依赖库
 apk add --no-cache $PHPIZE_DEPS
+
+if [[ -z "${PHP_EXTENSIONS##*,bcmath,*}" ]]; then
+    echo "---------- Install bcmath ----------"
+	docker-php-ext-install ${MC} bcmath
+fi
+
+if [[ -z "${EXTENSIONS##*,gd,*}" ]]; then
+    echo "---------- Install gd ----------"
+    isPhpVersionGreaterOrEqual 7 4
+
+    if [[ "$?" = "1" ]]; then
+        # "--with-xxx-dir" was removed from php 7.4 see https://github.com/docker-library/php/issues/912
+        options="--with-freetype --with-jpeg --with-webp"
+    else
+        options="--with-gd --with-freetype-dir=/usr/include/ --with-png-dir=/usr/include/ --with-jpeg-dir=/usr/include/ --with-webp-dir=/usr/include/"
+    fi
+
+    apk add --no-cache freetype freetype-dev libpng libpng-dev libjpeg-turbo libjpeg-turbo-dev libwebp-dev
+    docker-php-ext-configure gd ${options}
+    docker-php-ext-install ${MC} gd
+    apk del freetype-dev libpng-dev libjpeg-turbo-dev
+fi
 
 if [[ -z "${PHP_EXTENSIONS##*,pdo_mysql,*}" ]]; then
   echo "---------- Install pdo_mysql ----------"

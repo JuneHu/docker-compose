@@ -6,7 +6,7 @@
 
 - php: 7.4
 
-  > 安装 PHP 扩展 `mcrypt`, `pdo_mysql`, `redis`, `gd`, `opcache`
+  > 安装 PHP 扩展 `bcmath`, `pdo_mysql`, `mysqli`, `gd`,`redis`, `mcrypt`
 
 - redis: 5.0.13
 - mysql: 5.7

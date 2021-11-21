@@ -2,7 +2,7 @@
 
 export MC="-j$(nproc)"
 # 定义需要安装的扩展
-PHP_EXTENSIONS=',bcmath,pdo_mysql,mysqli,gd,redis,mcrypt,'
+PHP_EXTENSIONS=',bcmath,pdo_mysql,mysqli,gd,redis,mcrypt,zip,'
 
 echo
 echo "============================================"
@@ -89,6 +89,19 @@ fi
 if [[ -z "${PHP_EXTENSIONS##*,opcache,*}" ]]; then
     echo "---------- Install opcache ----------"
     docker-php-ext-install ${MC} opcache
+fi
+
+if [[ -z "${EXTENSIONS##*,zip,*}" ]]; then
+  echo "---------- Install zip ----------"
+  # Fix: https://github.com/docker-library/php/issues/797
+  apk add --no-cache libzip-dev
+
+  isPhpVersionGreaterOrEqual 7 4
+  if [[ "$?" != "1" ]]; then
+    docker-php-ext-configure zip --with-libzip=/usr/include
+  fi
+
+  docker-php-ext-install ${MC} zip
 fi
 
 # swoole扩展 https://pecl.php.net/package/swoole
